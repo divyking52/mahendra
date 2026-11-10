@@ -1,0 +1,10 @@
+# Source material — not needed by the site (and too large for GitHub)
+*.zip
+assets/House_relocation_animation_journey_601e88da_1080p_frames/
+assets/originals/
+
+# Tooling
+.vercel
+node_modules/
+.DS_Store
+Thumbs.db

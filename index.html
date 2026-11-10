@@ -1,0 +1,2818 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahendra Packers and Movers | Trusted Relocation Services Across India</title>
+<meta name="description" content="Mahendra Packers and Movers offers reliable, timely and secure moving solutions for your home, office, car and more — household shifting, office relocation, car transport, courier and cargo, luggage delivery and goods insurance across India.">
+<meta name="theme-color" content="#161e2d">
+<meta property="og:title" content="Mahendra Packers and Movers | Trusted Relocation Services Across India">
+<meta property="og:description" content="Safe, secure and hassle-free moving solutions for homes, offices and vehicles across India.">
+<meta property="og:image" content="assets/site/logo.png">
+<link rel="icon" type="image/png" href="assets/site/favicon2.png">
+<script>document.documentElement.classList.add('js');</script>
+
+<!-- First hero frame: fetched early so the canvas can paint immediately -->
+<link rel="preload" as="image" href="assets/frames/sm/frame_001.webp" media="(max-width: 900px), (pointer: coarse) and (max-width: 1366px)">
+<link rel="preload" as="image" href="assets/frames/lg/frame_001.webp" media="(min-width: 901px) and (pointer: fine), (min-width: 1367px)">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap">
+
+<noscript><style>
+  .hero__sticky{background:#161e2d url(assets/frames/sm/frame_001.webp) center/cover no-repeat}
+  .hero__phases,.hero__hud,.hero__cue{display:none!important}
+</style></noscript>
+
+<style>
+/* ==========================================================================
+   1. TOKENS — brand colours sampled from the original logo & stylesheet
+   ========================================================================== */
+:root{
+  --ink:#161e2d;          /* primary dark (original site text/ink) */
+  --ink-2:#0e1520;
+  --slate:#1a3f51;        /* logo slate-teal */
+  --slate-2:#245a73;
+  --red:#ed2027;          /* original accent red */
+  --red-2:#c9161c;
+  --paper:#f6f4ef;
+  --paper-2:#ebe6dc;
+  --white:#fff;
+  --muted:#5c6368;
+  --line:rgba(22,30,45,.12);
+  --line-light:rgba(255,255,255,.14);
+
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --f-body:"Manrope",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ease-io:cubic-bezier(.76,0,.24,1);
+  --gutter:clamp(20px,4.5vw,64px);
+  --nav-h:78px;
+  --lift:48px;
+  --radius:28px;
+  --hero-frames:480svh;   /* scroll distance used by the frame animation */
+}
+@media (max-width:900px){ :root{ --nav-h:66px; --lift:30px; --radius:22px; --hero-frames:400svh; } }
+
+/* ==========================================================================
+   2. BASE
+   ========================================================================== */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px)}
+body{margin:0;font:500 1rem/1.65 var(--f-body);color:var(--ink);background:var(--ink);overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg,canvas{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+h1,h2,h3,h4,p,ul,ol,figure,blockquote{margin:0}
+ul,ol{padding:0;list-style:none}
+::selection{background:var(--red);color:#fff}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:6px}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-link{position:fixed;top:12px;left:12px;z-index:999;padding:.8em 1.2em;background:var(--red);color:#fff;border-radius:999px;font-weight:700;transform:translateY(-160%);transition:transform .3s var(--ease)}
+.skip-link:focus{transform:none}
+.container{width:min(1280px,100% - var(--gutter)*2);margin-inline:auto}
+html.menu-open{overflow:hidden}
+
+/* Typography */
+.eyebrow{display:inline-flex;align-items:center;gap:.8em;font:700 .74rem/1 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.eyebrow::before{content:"";width:28px;height:2px;background:currentColor;border-radius:2px}
+.eyebrow--light{color:#fff}
+.h-section{font:700 clamp(2.3rem,5.2vw,4.9rem)/.98 var(--f-display);letter-spacing:-.035em;margin-top:.45em;text-wrap:balance}
+.h-section em,.hero__title em,.phase__title em,.h-xl em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--red)}
+.lead{font-size:clamp(1.05rem,1.4vw,1.22rem);line-height:1.7;color:var(--muted)}
+.dark .lead{color:rgba(255,255,255,.72)}
+.dark{color:#fff}
+
+/* ==========================================================================
+   3. BUTTONS — rolling label, sliding fill, magnetic (JS)
+   ========================================================================== */
+.btn{--bg:var(--red);--fg:#fff;--fill:var(--ink);--fill-fg:#fff;position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.75em;padding:1.1em 1.7em;border-radius:999px;background:var(--bg);color:var(--fg);font:800 .78rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;overflow:hidden;isolation:isolate;border:1px solid transparent;transition:color .45s var(--ease),box-shadow .5s var(--ease),border-color .4s}
+.btn::before{content:"";position:absolute;inset:-1px;z-index:-1;background:var(--fill);border-radius:inherit;transform:translateY(102%) scaleY(.6);transform-origin:50% 100%;transition:transform .6s var(--ease)}
+.btn:hover::before,.btn:focus-visible::before{transform:none}
+.btn:hover,.btn:focus-visible{color:var(--fill-fg)}
+.btn svg{width:1.15em;height:1.15em;flex:none;transition:transform .5s var(--ease)}
+.btn:hover svg.i-arr{transform:translateX(4px)}
+.btn--red{box-shadow:0 14px 34px -14px rgba(237,32,39,.75)}
+.btn--glass{--bg:rgba(255,255,255,.1);--fill:#fff;--fill-fg:var(--ink);border-color:rgba(255,255,255,.4);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn--ink{--bg:var(--ink);--fill:var(--red)}
+.btn--white{--bg:#fff;--fg:var(--ink);--fill:var(--ink);--fill-fg:#fff}
+.btn--outline{--bg:transparent;--fg:var(--ink);--fill:var(--ink);border-color:var(--line)}
+.btn--sm{padding:.9em 1.25em;font-size:.7rem}
+.btn--block{width:100%}
+.btn__label{display:inline-flex;flex-direction:column;height:1.2em;overflow:hidden;line-height:1.2em}
+.btn__label>span,.btn__label::after{display:block;transition:transform .55s var(--ease)}
+.btn__label::after{content:attr(data-text)}
+.btn:hover .btn__label>span,.btn:hover .btn__label::after,.btn:focus-visible .btn__label>span,.btn:focus-visible .btn__label::after{transform:translateY(-100%)}
+.btn .pulse{position:relative;width:8px;height:8px;border-radius:50%;background:#fff;flex:none}
+.btn .pulse::after{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;animation:ping 1.8s var(--ease) infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(3.2);opacity:0}}
+[data-magnetic]{will-change:transform}
+
+.link-arrow{display:inline-flex;align-items:center;gap:.5em;font-weight:700;font-size:.92rem;position:relative}
+.link-arrow::after{content:"";position:absolute;left:0;right:1.6em;bottom:-3px;height:1.5px;background:currentColor;transform:scaleX(.25);transform-origin:left;transition:transform .5s var(--ease)}
+.link-arrow:hover::after{transform:scaleX(1)}
+.link-arrow svg{width:1em;height:1em;transition:transform .4s var(--ease)}
+.link-arrow:hover svg{transform:translate(2px,-2px)}
+
+/* ==========================================================================
+   4. PAGE PROGRESS + NAVIGATION
+   ========================================================================== */
+.progress{position:fixed;inset:0 0 auto;height:3px;z-index:120;pointer-events:none}
+.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--red),#ff6a5a);transform-origin:0 50%;transform:scaleX(0)}
+
+.nav{position:fixed;inset:0 0 auto;z-index:110;height:var(--nav-h);color:#fff;transition:background-color .5s var(--ease),box-shadow .5s,height .4s var(--ease)}
+.nav::before{content:"";position:absolute;inset:0 0 -60px;background:linear-gradient(180deg,rgba(9,14,22,.62),rgba(9,14,22,0));pointer-events:none;transition:opacity .5s}
+.nav.is-solid{background:rgba(22,30,45,.94);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);box-shadow:0 18px 40px -28px rgba(0,0,0,.6)}
+.nav.is-solid::before{opacity:0}
+.nav__inner{position:relative;height:100%;display:flex;align-items:center;gap:28px;width:min(1440px,100% - var(--gutter)*2);margin-inline:auto}
+.nav__brand{flex:none;display:flex;align-items:center;background:#fff;border-radius:14px;padding:3px 10px;box-shadow:0 8px 26px -12px rgba(0,0,0,.5);transition:transform .5s var(--ease)}
+.nav__brand img{height:46px;width:auto}
+.nav__brand:hover{transform:rotate(-2deg) scale(1.03)}
+.nav__links{position:relative;margin-left:auto}
+.nav__links ul{display:flex;gap:4px}
+.nav__links a{position:relative;display:block;padding:10px 13px;font-weight:700;font-size:.86rem;letter-spacing:.01em;opacity:.86;transition:opacity .3s}
+.nav__links a::after{content:"";position:absolute;left:13px;right:13px;bottom:4px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.nav__links a:hover{opacity:1}
+.nav__links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav__links a[aria-current="true"]{opacity:1}
+.nav__indicator{position:absolute;left:0;bottom:-6px;height:3px;width:20px;border-radius:3px;background:var(--red);transform:translateX(0);opacity:0;transition:transform .6s var(--ease),width .6s var(--ease),opacity .3s}
+.nav__indicator.is-on{opacity:1}
+.nav__actions{display:flex;align-items:center;gap:14px}
+.nav__phone{display:flex;align-items:center;gap:10px;font-weight:800;font-size:.9rem;white-space:nowrap}
+.nav__phone .ico{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.3);transition:background .4s,border-color .4s}
+.nav__phone .ico svg{width:16px;height:16px}
+.nav__phone:hover .ico{background:var(--red);border-color:var(--red)}
+.nav__burger{display:none;position:relative;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.35);z-index:2}
+.nav__burger span{position:absolute;left:13px;right:13px;height:2px;background:currentColor;border-radius:2px;transition:transform .5s var(--ease),top .5s var(--ease)}
+.nav__burger span:nth-child(1){top:18px}.nav__burger span:nth-child(2){top:26px}
+.menu-open .nav__burger span:nth-child(1){top:22px;transform:rotate(45deg)}
+.menu-open .nav__burger span:nth-child(2){top:22px;transform:rotate(-45deg)}
+@media (max-width:1240px){.nav__phone span.txt{display:none}}
+@media (max-width:1120px){
+  .nav__links{display:none}
+  .nav__burger{display:block}
+  .nav__actions{margin-left:auto}
+}
+@media (max-width:560px){ .nav__actions .btn{display:none} .nav__brand img{height:38px} }
+
+/* Full-screen mobile menu: circular clip reveal from the burger */
+.menu{position:fixed;inset:0;z-index:105;background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:space-between;padding:calc(var(--nav-h) + 30px) var(--gutter) calc(30px + env(safe-area-inset-bottom));clip-path:circle(0 at var(--ox,90%) var(--oy,40px));visibility:hidden;transition:clip-path .8s var(--ease-io),visibility 0s .8s;overflow-y:auto}
+.menu::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 85% 10%,rgba(237,32,39,.22),transparent 70%),radial-gradient(50% 50% at 0% 100%,rgba(26,63,81,.8),transparent 70%);pointer-events:none}
+.menu-open .menu{clip-path:circle(150% at var(--ox,90%) var(--oy,40px));visibility:visible;transition:clip-path .9s var(--ease-io),visibility 0s}
+.menu ol{position:relative;counter-reset:m}
+.menu li{overflow:hidden}
+.menu ol a{display:flex;align-items:baseline;gap:16px;padding:.18em 0;font:700 clamp(2.1rem,9vw,3.6rem)/1.1 var(--f-display);letter-spacing:-.03em;transform:translateY(110%);transition:transform .7s var(--ease),color .3s}
+.menu ol a::before{counter-increment:m;content:"0" counter(m);font:700 .8rem/1 var(--f-body);letter-spacing:.1em;color:var(--red)}
+.menu ol a:hover{color:var(--red)}
+.menu-open .menu ol a{transform:none;transition-delay:calc(.25s + var(--i)*.06s)}
+.menu__foot{position:relative;display:grid;gap:14px;margin-top:40px;opacity:0;transform:translateY(20px);transition:opacity .6s .2s,transform .6s .2s var(--ease)}
+.menu-open .menu__foot{opacity:1;transform:none;transition-delay:.7s}
+.menu__foot a{font-weight:700}
+.menu__foot .btn{justify-self:start}
+
+/* ==========================================================================
+   5. HERO — sticky canvas frame sequence
+   ========================================================================== */
+.hero{position:relative;height:calc(var(--hero-frames) + 200svh);background:var(--ink)}
+.hero__sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;color:#fff}
+.hero__stage{position:absolute;inset:0;overflow:hidden;transform-origin:50% 40%;will-change:transform}
+.hero__stage canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero__shade{position:absolute;inset:0;pointer-events:none;background:
+  linear-gradient(90deg,rgba(9,14,22,.62) 0%,rgba(9,14,22,.25) 38%,rgba(9,14,22,0) 60%),
+  linear-gradient(0deg,rgba(9,14,22,.72) 0%,rgba(9,14,22,.2) 30%,rgba(9,14,22,0) 48%)}
+.hero__dim{position:absolute;inset:0;background:var(--ink);opacity:0;pointer-events:none}
+
+.hero__intro{position:absolute;left:var(--gutter);top:50%;transform:translateY(-46%);width:min(1120px,calc(100% - var(--gutter)*2));z-index:2}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px 8px 10px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:700 .72rem/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase}
+.hero__eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(237,32,39,.25)}
+.hero__title{margin-top:22px;font:800 clamp(2.7rem,6.3vw,7.2rem)/.92 var(--f-display);letter-spacing:-.045em;text-shadow:0 4px 40px rgba(0,0,0,.25)}
+.hero__title em{color:#fff}
+.hero__title .stop{color:var(--red);font-family:var(--f-display);font-style:normal}
+.hero__line{display:block;overflow:hidden;padding-bottom:.08em;will-change:transform}
+.hero__line>span{display:block;transform:translateY(105%);animation:lineUp 1.2s var(--ease) forwards}
+.hero__line:nth-child(2)>span{animation-delay:.12s}
+@keyframes lineUp{to{transform:none}}
+.hero__lead{margin-top:24px;max-width:560px;font-size:clamp(1rem,1.35vw,1.2rem);line-height:1.65;color:rgba(255,255,255,.88);opacity:0;animation:fadeUp 1s .45s var(--ease) forwards}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;opacity:0;animation:fadeUp 1s .6s var(--ease) forwards}
+@keyframes fadeUp{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+
+/* Scroll cue */
+.hero__cue{position:absolute;left:50%;bottom:118px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:12px;font:700 .66rem/1 var(--f-body);letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.8);z-index:2;transition:opacity .4s}
+.hero__cue .mouse{position:relative;width:24px;height:38px;border:1.5px solid rgba(255,255,255,.75);border-radius:14px}
+.hero__cue .mouse::before{content:"";position:absolute;left:50%;top:7px;width:3px;height:8px;margin-left:-1.5px;border-radius:2px;background:#fff;animation:wheel 1.8s var(--ease-io) infinite}
+.hero__cue .trail{width:1px;height:34px;background:linear-gradient(#fff,transparent);transform-origin:top;animation:trail 1.8s var(--ease-io) infinite}
+@keyframes wheel{0%{transform:translateY(0);opacity:1}70%{transform:translateY(12px);opacity:0}100%{opacity:0}}
+@keyframes trail{0%{transform:scaleY(0)}50%{transform:scaleY(1);opacity:1}100%{transform:scaleY(1);opacity:0}}
+
+/* Chapter overlays — words are driven by scroll position in JS */
+.hero__phases{position:absolute;inset:0;pointer-events:none;z-index:2}
+.phase{position:absolute;bottom:150px;left:var(--gutter);max-width:min(640px,80vw);opacity:0;will-change:opacity,transform}
+.phase--right{left:auto;right:var(--gutter);text-align:right}
+.phase--right .phase__eyebrow{justify-content:flex-end}
+.phase--center{left:50%;max-width:min(860px,90vw);text-align:center;margin-left:calc(min(860px,90vw) / -2)}
+.phase--center .phase__eyebrow{justify-content:center}
+.phase__eyebrow{display:flex;align-items:center;gap:12px;font:700 .72rem/1 var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.phase__eyebrow b{color:var(--red);font-weight:800}
+.phase__eyebrow i{display:block;width:44px;height:1.5px;background:rgba(255,255,255,.7);transform-origin:left;transform:scaleX(0)}
+.phase--right .phase__eyebrow i{transform-origin:right}
+.phase__title{margin-top:16px;font:800 clamp(2.1rem,4.8vw,4.6rem)/.96 var(--f-display);letter-spacing:-.04em;text-shadow:0 6px 40px rgba(0,0,0,.35)}
+.phase__title em{color:#fff}
+.phase__sub{margin-top:14px;font-size:clamp(.95rem,1.15vw,1.08rem);color:rgba(255,255,255,.85);max-width:440px}
+.phase--right .phase__sub{margin-left:auto}
+.phase--center .phase__sub{margin-inline:auto}
+.pw{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .06em .1em 0;margin:0 -.06em -.1em 0}
+.pw__i{display:inline-block;transform:translateY(110%);will-change:transform}
+
+/* HUD: chapter navigation + journey rail + frame counter */
+.hero__hud{position:absolute;left:var(--gutter);right:var(--gutter);bottom:calc(26px + env(safe-area-inset-bottom));z-index:3;color:#fff}
+.hud__top{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:30px}
+.hud__chapters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));flex:1;max-width:720px}
+.hud__chapters button{display:flex;align-items:center;gap:10px;padding:6px 0;font:700 .72rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);text-align:left;pointer-events:auto;transition:color .4s}
+.hud__chapters button b{font-weight:800;color:rgba(255,255,255,.4);transition:color .4s}
+.hud__chapters button.is-active,.hud__chapters button:hover{color:#fff}
+.hud__chapters button.is-active b{color:var(--red)}
+.hud__counter{font:600 .7rem/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;color:rgba(255,255,255,.75);white-space:nowrap;font-variant-numeric:tabular-nums}
+.hud__rail{position:relative;height:2px;background:rgba(255,255,255,.22);border-radius:2px}
+.hud__fill{position:absolute;inset:0;background:var(--red);transform-origin:0 50%;transform:scaleX(var(--p,0));border-radius:2px}
+.hud__marks{position:absolute;inset:0}
+.hud__marks i{position:absolute;top:50%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:#fff;opacity:.6}
+.hud__truck{position:absolute;inset:0;transform:translateX(calc(var(--p,0) * 100%));pointer-events:none}
+.hud__truck svg{position:absolute;left:-15px;bottom:4px;width:30px;height:20px;color:#fff;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))}
+
+@media (max-aspect-ratio:19/20){
+  /* Portrait: frame sits letterboxed mid-screen; copy occupies the space above & below */
+  .hero__shade{background:linear-gradient(180deg,rgba(22,30,45,.9) 0%,rgba(22,30,45,.55) 36%,rgba(22,30,45,0) 52%,rgba(22,30,45,0) 74%,rgba(22,30,45,.6) 100%)}
+  .hero__intro{top:calc(var(--nav-h) + 14px);transform:none;bottom:auto}
+  .hero__title{font-size:clamp(2.3rem,10.5vw,4.4rem);margin-top:16px}
+  .hero__lead{font-size:.98rem;margin-top:16px}
+  .phase,.phase--right,.phase--center{top:calc(var(--nav-h) + 18px);bottom:auto;left:var(--gutter);right:var(--gutter);max-width:none;margin:0;text-align:left}
+  .phase--right .phase__eyebrow,.phase--center .phase__eyebrow{justify-content:flex-start}
+  .phase--right .phase__sub,.phase--center .phase__sub{margin-left:0}
+  .phase__title{font-size:clamp(1.9rem,8.4vw,3.4rem);margin-top:12px}
+  .phase__sub{font-size:.92rem}
+  .hero__cue{bottom:96px}
+}
+@media (max-aspect-ratio:19/20) and (max-width:900px){
+  .hero__intro{position:absolute;bottom:0;display:flex;flex-direction:column;height:calc(100% - var(--nav-h) - 14px);padding-bottom:calc(98px + env(safe-area-inset-bottom))}
+  .hero__ctas{position:static;margin-top:auto;flex-wrap:nowrap;gap:10px}
+  .hero__ctas .btn{flex:1 1 0;min-width:0;padding:1.05em .8em;font-size:.68rem;letter-spacing:.1em;gap:.5em}
+  .hero__eyebrow{font-size:.62rem;letter-spacing:.12em}
+  .hero__lead{font-size:.92rem;line-height:1.55}
+  .hero__cue{display:none}
+}
+@media (max-width:640px){
+  .hud__chapters{display:flex;gap:16px}
+  .hud__chapters button{font-size:.6rem;letter-spacing:.08em;gap:6px}
+  .hud__chapters button span{display:none}
+  .hud__chapters button.is-active span{display:inline}
+  .hud__counter{font-size:.62rem}
+}
+
+/* ==========================================================================
+   6. SECTION SHELL — stacked sheets that overlap the previous section
+   ========================================================================== */
+.sec{position:relative;padding:clamp(96px,12vw,170px) 0 calc(clamp(96px,12vw,170px) + var(--lift))}
+.lift{margin-top:calc(var(--lift) * -1);border-radius:var(--lift) var(--lift) 0 0}
+.about{z-index:3;margin-top:-100svh;background:var(--paper);box-shadow:0 -40px 80px -30px rgba(0,0,0,.55)}
+.services{z-index:4;background:#fff}
+.coverage{z-index:5;background:var(--ink)}
+.support{z-index:6;background:var(--red)}
+.process{z-index:7;background:var(--paper)}
+.pricing{z-index:8;background:#fff}
+.reviews{z-index:9;background:var(--slate)}
+.faq{z-index:10;background:var(--paper)}
+.contact{z-index:11;background:var(--ink)}
+.footer{z-index:12}
+.sec-head{display:grid;gap:28px;margin-bottom:clamp(48px,6vw,84px)}
+.sec-head--split{grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);align-items:end}
+.sec-head__aside{color:var(--muted);font-size:1.05rem;max-width:420px}
+.dark .sec-head__aside{color:rgba(255,255,255,.7)}
+@media (max-width:900px){.sec-head--split{grid-template-columns:1fr}}
+
+/* ==========================================================================
+   7. REVEAL SYSTEM — distinct entrance variants (IntersectionObserver)
+   ========================================================================== */
+[data-reveal]{transition:opacity 1s var(--ease),transform 1.2s var(--ease),clip-path 1.3s var(--ease);transition-delay:var(--d,0s)}
+html.js [data-reveal="rise"]:not(.is-in){opacity:0;transform:translateY(46px)}
+html.js [data-reveal="fade"]:not(.is-in){opacity:0}
+html.js [data-reveal="scale"]:not(.is-in){opacity:0;transform:scale(.86)}
+html.js [data-reveal="tilt"]:not(.is-in){opacity:0;transform:perspective(1000px) rotateX(24deg) translateY(60px)}
+[data-reveal^="clip"]{clip-path:inset(-12% -12% -12% -12% round var(--radius))}
+html.js [data-reveal="clip-up"]:not(.is-in){clip-path:inset(100% 0 0 0 round var(--radius))}
+html.js [data-reveal="clip-down"]:not(.is-in){clip-path:inset(0 0 100% 0 round var(--radius))}
+html.js [data-reveal="clip-left"]:not(.is-in){clip-path:inset(0 0 0 100% round var(--radius))}
+html.js [data-reveal="clip-right"]:not(.is-in){clip-path:inset(0 100% 0 0 round var(--radius))}
+html.js [data-reveal="clip-center"]:not(.is-in){clip-path:inset(50% 50% 50% 50% round var(--radius))}
+html.js [data-reveal="clip-circle"]{clip-path:circle(80% at 50% 50%)}
+html.js [data-reveal="clip-circle"]:not(.is-in){clip-path:circle(0% at 50% 60%)}
+/* clipped media also settles from a slight zoom */
+[data-reveal^="clip"] .zoom{transition:scale 1.6s var(--ease),transform 1.4s var(--ease),filter 1s;transition-delay:var(--d,0s)}
+html.js [data-reveal^="clip"]:not(.is-in) .zoom{scale:1.3}
+
+/* Split words */
+.sw{display:inline-block;overflow:hidden;vertical-align:top;padding:0 .06em .1em 0;margin:0 -.06em -.1em 0}
+.sw__i{display:inline-block;transition:transform 1.1s var(--ease);transition-delay:calc(var(--i) * 55ms + var(--d,0s))}
+html.js [data-reveal="words"]{transition:none}
+html.js [data-reveal="words"]:not(.is-in) .sw__i{transform:translateY(112%) rotate(5deg)}
+
+/* Scroll-scrubbed word highlight */
+.sc{transition:opacity .35s linear,color .35s;opacity:.16}
+.sc.lit{opacity:1}
+
+/* ==========================================================================
+   8. ABOUT
+   ========================================================================== */
+.about{overflow:hidden}
+.about__marquee{position:absolute;top:clamp(20px,4vw,48px);left:0;white-space:nowrap;font:800 clamp(5rem,15vw,15rem)/1 var(--f-display);letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px rgba(22,30,45,.09);pointer-events:none;user-select:none}
+.about__marquee>div{will-change:transform}
+.about__grid{position:relative;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.about__media{position:relative;aspect-ratio:1/1.08;max-width:640px}
+.about__img{position:absolute;overflow:hidden;border-radius:var(--radius);background:var(--paper-2);box-shadow:0 40px 80px -40px rgba(22,30,45,.55)}
+.about__img img{position:absolute;left:0;top:-8%;width:100%;height:116%;object-fit:cover}
+.about__img--main{inset:0 17% 25% 0}
+.about__img--tall{right:0;bottom:0;width:40%;height:56%;border:6px solid var(--paper)}
+.about__img--small{left:9%;bottom:3%;width:36%;height:28%;border:6px solid var(--paper)}
+.about__badge{position:absolute;top:-34px;right:4%;width:132px;height:132px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;box-shadow:0 20px 40px -18px rgba(237,32,39,.8);z-index:2}
+.about__badge svg.ring{position:absolute;inset:8px;width:calc(100% - 16px);height:calc(100% - 16px);animation:spin 18s linear infinite}
+.about__badge svg.ring text{font:800 8.6px var(--f-body);fill:#fff;text-transform:uppercase}
+.about__badge .core{width:46px;height:46px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.about__decor{position:absolute;pointer-events:none;color:var(--slate);z-index:2}
+.about__decor--box{width:86px;left:-34px;top:16%;animation:floatY 7s ease-in-out infinite}
+.about__decor--tape{width:120px;right:-30px;top:52%;animation:floatY 9s ease-in-out -2s infinite}
+.about__decor--stamp{left:-6%;bottom:30%;padding:8px 14px;border:2px solid var(--red);color:var(--red);font:800 .78rem/1 var(--f-body);letter-spacing:.2em;border-radius:6px;transform:rotate(-12deg);background:rgba(246,244,239,.85);animation:floatR 8s ease-in-out infinite}
+@keyframes floatY{0%,100%{translate:0 0}50%{translate:0 -16px}}
+@keyframes floatR{0%,100%{rotate:-12deg;translate:0 0}50%{rotate:-6deg;translate:6px -10px}}
+.about__content p+p{margin-top:18px}
+.about__content .lead{margin-top:30px;color:var(--ink)}
+.about__content .muted{color:var(--muted)}
+.about__sign{display:flex;align-items:center;gap:18px;margin-top:36px;flex-wrap:wrap}
+.about__sign .addr{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.92rem;color:var(--slate)}
+.about__sign .addr svg{width:18px;height:18px;color:var(--red)}
+
+.benefits{position:relative;margin-top:clamp(80px,10vw,140px)}
+.benefits__head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.benefits__head h3{font:700 clamp(1.6rem,2.8vw,2.5rem)/1.05 var(--f-display);letter-spacing:-.03em;max-width:620px}
+.benefits__list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 34px}
+.benefit{position:relative;padding-top:40px}
+.benefit::before{content:"";position:absolute;left:0;right:-34px;top:0;height:1.5px;background:linear-gradient(90deg,var(--red),rgba(237,32,39,.15));transform-origin:left;transform:scaleX(0);transition:transform 1.1s var(--ease);transition-delay:calc(var(--i) * .14s)}
+.benefit:nth-child(3n)::before{right:0}
+.benefit::after{content:"";position:absolute;left:0;top:-6px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:2.5px solid var(--red);transform:scale(0);transition:transform .6s var(--ease);transition-delay:calc(var(--i) * .14s + .2s)}
+.benefits.is-in .benefit::before,.benefits.is-in .benefit::after{transform:none}
+.benefit__ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:#fff;color:var(--slate);box-shadow:0 16px 30px -18px rgba(22,30,45,.45);transition:transform .6s var(--ease),background .4s,color .4s}
+.benefit__ico svg{width:26px;height:26px}
+.benefit:hover .benefit__ico{transform:translateY(-6px) rotate(-6deg);background:var(--red);color:#fff}
+.benefit__n{position:absolute;right:0;top:30px;font:800 2.6rem/1 var(--f-display);color:transparent;-webkit-text-stroke:1px rgba(22,30,45,.16)}
+.benefit h4{margin-top:22px;font:700 1.28rem/1.2 var(--f-display);letter-spacing:-.02em}
+.benefit p{margin-top:10px;color:var(--muted);font-size:.96rem}
+@media (max-width:1000px){
+  .about__grid{grid-template-columns:1fr}
+  .about__media{max-width:560px;margin-inline:auto;width:100%;margin-top:30px}
+  .benefits__list{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .benefit:nth-child(3n)::before{right:-34px}.benefit:nth-child(2n)::before{right:0}
+}
+@media (max-width:640px){
+  .benefits__list{grid-template-columns:1fr;gap:0;padding-left:30px;border-left:0}
+  .benefits__list::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:1.5px;background:linear-gradient(var(--red),rgba(237,32,39,.1))}
+  .benefits{--x:0}
+  .benefit{padding:0 0 40px}
+  .benefit::before{display:none}
+  .benefit::after{left:-30px;top:18px}
+  .benefit__n{top:0}
+  .about__decor--box{left:-10px}.about__decor--tape{right:-10px}
+  .about__badge{width:104px;height:104px;top:-26px}
+}
+
+/* ==========================================================================
+   9. SERVICES — asymmetric 3D gallery
+   ========================================================================== */
+.svc-route{position:relative;margin:-24px 0 76px;height:70px}
+.svc-route svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.svc-route .base{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:4 7}
+.svc-route .draw{fill:none;stroke:var(--red);stroke-width:2;stroke-linecap:round}
+.svc-route ol{position:absolute;inset:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+.svc-route li{position:relative;display:flex;justify-content:center;align-items:center}
+.svc-route a{position:relative;display:grid;place-items:center;font:700 .68rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);transition:color .3s}
+.svc-route a .lbl{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);white-space:nowrap}
+.svc-route a i{width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid var(--line);transition:border-color .3s,background .3s,transform .4s var(--ease)}
+.svc-route a:hover,.svc-route a.is-hot{color:var(--ink)}
+.svc-route a:hover i,.svc-route a.is-hot i{border-color:var(--red);background:var(--red);transform:scale(1.25)}
+.svc-route .lbl{padding:6px 10px;border-radius:999px}
+@media (max-width:760px){.svc-route{display:none}}
+
+.svc-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:300px 300px 360px;gap:22px}
+.svc{position:relative;perspective:1400px;min-width:0}
+.svc--1{grid-column:1/8;grid-row:1/3}
+.svc--2{grid-column:8/13;grid-row:1/2}
+.svc--3{grid-column:8/13;grid-row:2/3}
+.svc--4{grid-column:1/5;grid-row:3/4}
+.svc--5{grid-column:5/9;grid-row:3/4;margin-top:48px;margin-bottom:-48px}
+.svc--6{grid-column:9/13;grid-row:3/4}
+.svc__card{position:relative;height:100%;border-radius:var(--radius);color:#fff;transform-style:preserve-3d;transition:transform .8s var(--ease);will-change:transform}
+.svc__media{position:absolute;inset:0;border-radius:inherit;overflow:hidden;background:var(--ink);transform:translateZ(0)}
+.svc__media img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 1.4s var(--ease),filter 1s}
+.svc__media::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(420px circle at var(--mx,70%) var(--my,20%),rgba(255,255,255,.18),transparent 60%),
+  linear-gradient(180deg,rgba(14,21,32,.05) 20%,rgba(14,21,32,.88) 100%);transition:opacity .6s}
+.svc__card:hover .svc__media img{transform:scale(1.14);filter:saturate(1.15)}
+.svc__num{position:absolute;top:22px;left:26px;font:800 clamp(3.4rem,5vw,5.2rem)/1 var(--f-display);letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.75);transform:translateZ(50px);transition:color .6s,-webkit-text-stroke-color .6s}
+.svc__card:hover .svc__num{color:var(--red);-webkit-text-stroke-color:var(--red)}
+.svc__tag{position:absolute;top:28px;right:24px;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:700 .64rem/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;transform:translateZ(40px)}
+.svc__body{position:absolute;left:26px;right:26px;bottom:24px;transform:translateZ(70px)}
+.svc__body h3{font:700 clamp(1.55rem,2.3vw,2.25rem)/1.02 var(--f-display);letter-spacing:-.03em}
+.svc--1 .svc__body h3{font-size:clamp(2rem,3.6vw,3.4rem)}
+.svc__body p{margin-top:10px;max-width:440px;font-size:.95rem;color:rgba(255,255,255,.84);display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .7s var(--ease),opacity .5s,margin .7s var(--ease)}
+.svc__body p>span{overflow:hidden}
+.svc__card:hover .svc__body p,.svc__card:focus-within .svc__body p,.svc--1 .svc__body p{grid-template-rows:1fr;opacity:1}
+.svc__actions{display:flex;align-items:center;gap:18px;margin-top:16px;flex-wrap:wrap}
+.svc__actions .link-arrow{color:#fff;font-size:.84rem}
+@media (hover:none){.svc__body p{grid-template-rows:1fr;opacity:1}}
+@media (max-width:1100px){
+  .svc-grid{grid-template-columns:repeat(6,minmax(0,1fr));grid-template-rows:none;grid-auto-rows:340px}
+  .svc--1{grid-column:1/7;grid-row:auto;min-height:440px}
+  .svc--2,.svc--3,.svc--4,.svc--5,.svc--6{grid-column:span 3;grid-row:auto;margin:0}
+  .svc--6{grid-column:1/7}
+}
+@media (max-width:640px){
+  .svc-grid{grid-template-columns:1fr;grid-auto-rows:auto;gap:16px}
+  .svc,.svc--1,.svc--2,.svc--3,.svc--4,.svc--5,.svc--6{grid-column:1/-1;min-height:400px}
+  .svc__body p{grid-template-rows:1fr;opacity:1}
+}
+
+/* ==========================================================================
+   10. COVERAGE
+   ========================================================================== */
+.coverage{overflow:hidden}
+.coverage::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 40% at 80% 30%,rgba(26,63,81,.9),transparent 70%),radial-gradient(40% 40% at 10% 90%,rgba(237,32,39,.12),transparent 70%);pointer-events:none}
+.coverage__grid{position:relative;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(40px,6vw,90px);align-items:start}
+.coverage__intro .lead{margin-top:24px}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+.tab{position:relative;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 14px;border-radius:16px;border:1px solid var(--line-light);color:rgba(255,255,255,.75);font-weight:700;transition:background .4s,border-color .4s,color .3s,transform .4s var(--ease)}
+.tab small{font-size:.7rem;font-weight:700;letter-spacing:.08em;color:rgba(255,255,255,.5);text-transform:uppercase}
+.tab .pin{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.35);transition:background .3s,box-shadow .3s}
+.tab:hover{color:#fff;transform:translateY(-2px)}
+.tab[aria-selected="true"]{background:#fff;color:var(--ink);border-color:#fff}
+.tab[aria-selected="true"] small{color:var(--muted)}
+.tab[aria-selected="true"] .pin{background:var(--red);box-shadow:0 0 0 5px rgba(237,32,39,.2)}
+.region{margin-top:22px;border-radius:var(--radius);background:rgba(255,255,255,.05);border:1px solid var(--line-light);overflow:hidden}
+.region__fig{position:relative;height:200px;overflow:hidden}
+.region__fig img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .6s,transform 1.4s var(--ease)}
+.region__fig img.is-out{opacity:0;transform:scale(1.08)}
+.region__fig::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(22,30,45,.92))}
+.region__cap{position:absolute;left:22px;bottom:16px;right:22px;z-index:1;display:flex;justify-content:space-between;align-items:end;gap:10px}
+.region__cap strong{display:block;font:700 1.7rem/1 var(--f-display);letter-spacing:-.02em}
+.region__cap span{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.region__body{padding:22px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{display:inline-flex;align-items:center;gap:7px;padding:8px 13px;border-radius:999px;border:1px solid var(--line-light);font-size:.86rem;font-weight:700;color:rgba(255,255,255,.88);opacity:0;transform:translateY(12px);animation:chipIn .6s var(--ease) forwards;animation-delay:calc(var(--i) * 45ms);transition:background .3s,border-color .3s,color .3s}
+.chips a::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+.chips a:hover,.chips a.is-hot{background:var(--red);border-color:var(--red);color:#fff}
+.chips a:hover::before,.chips a.is-hot::before{background:#fff}
+@keyframes chipIn{to{opacity:1;transform:none}}
+.region__foot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-top:20px;padding-top:18px;border-top:1px solid var(--line-light)}
+.region__foot .link-arrow{color:rgba(255,255,255,.85);font-size:.86rem}
+
+.map{position:relative;border-radius:calc(var(--radius) + 6px);background:rgba(255,255,255,.03);border:1px solid var(--line-light);padding:clamp(14px,2vw,26px);overflow:hidden}
+.map::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.16) 1px,transparent 1.4px);background-size:18px 18px;-webkit-mask-image:radial-gradient(70% 65% at 45% 50%,#000,transparent);mask-image:radial-gradient(70% 65% at 45% 50%,#000,transparent);pointer-events:none}
+.map svg{position:relative;width:100%;height:auto;overflow:visible}
+.map .region-lbl{font:800 30px var(--f-display);letter-spacing:6px;fill:rgba(255,255,255,.06);text-transform:uppercase}
+.map .route{fill:none;stroke:var(--red);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:1 1;stroke-dashoffset:1;opacity:.85;transition:stroke-dashoffset 1.4s var(--ease);transition-delay:calc(var(--i) * 70ms)}
+.map .route.on{stroke-dashoffset:0}
+.map .route-ghost{fill:none;stroke:rgba(255,255,255,.08);stroke-width:1;stroke-dasharray:2 5}
+.map .city{cursor:pointer}
+.map .city circle.dot{fill:rgba(255,255,255,.45);transition:fill .3s,r .3s}
+.map .city circle.halo{fill:none;stroke:var(--red);stroke-width:1.5;opacity:0;transform-box:fill-box;transform-origin:center}
+.map .city text{font:700 14px var(--f-body);fill:rgba(255,255,255,.42);transition:fill .3s;paint-order:stroke;stroke:rgba(22,30,45,.85);stroke-width:4px}
+.map .city.on circle.dot{fill:#fff}
+.map .city.on text{fill:rgba(255,255,255,.92)}
+.map .city.on circle.halo{animation:halo 2.4s var(--ease) infinite;animation-delay:calc(var(--i) * 120ms)}
+.map .city.hot circle.dot{fill:var(--red);r:7}
+.map .city.hot text{fill:#fff}
+@keyframes halo{0%{opacity:.9;transform:scale(.6)}100%{opacity:0;transform:scale(3)}}
+.map .hq circle.core{fill:var(--red)}
+.map .hq circle.wave{fill:none;stroke:var(--red);stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:hq 3s var(--ease) infinite}
+.map .hq circle.wave:nth-of-type(2){animation-delay:1s}.map .hq circle.wave:nth-of-type(3){animation-delay:2s}
+.map .hq text{font:800 15px var(--f-body);fill:#fff;letter-spacing:.5px;paint-order:stroke;stroke:rgba(22,30,45,.9);stroke-width:4px}
+@keyframes hq{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(4.5)}}
+.map .runner{fill:#fff}
+.map__legend{position:relative;display:flex;gap:20px;flex-wrap:wrap;margin-top:10px;font-size:.78rem;font-weight:700;color:rgba(255,255,255,.6)}
+.map__legend span{display:inline-flex;align-items:center;gap:8px}
+.map__legend i{width:9px;height:9px;border-radius:50%;background:#fff}
+.map__legend i.r{background:var(--red)}
+.map__legend i.l{width:22px;height:2px;border-radius:2px;background:var(--red)}
+.map__note{position:absolute;top:22px;right:24px;text-align:right;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.map__note b{display:block;font:800 1.5rem/1 var(--f-display);letter-spacing:-.02em;color:#fff;text-transform:none;margin-bottom:4px}
+
+.ticker{position:relative;margin-top:clamp(70px,8vw,110px);display:grid;gap:14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.ticker__row{display:flex;width:max-content;animation:tick 60s linear infinite}
+.ticker__row--rev{animation-direction:reverse;animation-duration:70s}
+.ticker__row span{display:inline-flex;align-items:center;gap:26px;padding-right:26px;font:700 clamp(1.6rem,3vw,2.6rem)/1.1 var(--f-display);letter-spacing:-.02em;color:rgba(255,255,255,.88);white-space:nowrap}
+.ticker__row--rev span{color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.35)}
+.ticker__row span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--red)}
+@keyframes tick{to{transform:translateX(-50%)}}
+.paused .ticker__row,.paused .ring-rot{animation-play-state:paused}
+@media (min-width:1001px){.map{position:sticky;top:calc(var(--nav-h) + 24px)}}
+@media (max-width:1000px){.coverage__grid{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .map .city text{font-size:21px;stroke-width:5px}
+  .map .hq text{font-size:23px}
+  .map .region-lbl{font-size:40px}
+  .map__note{position:relative;top:auto;right:auto;text-align:left;margin-bottom:8px}
+}
+
+/* ==========================================================================
+   11. SUPPORT — animated clock
+   ========================================================================== */
+.support{overflow:hidden;color:#fff}
+.support::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 85% 50%,rgba(255,255,255,.16),transparent 60%),linear-gradient(120deg,var(--red-2),var(--red) 55%,#f2433f);pointer-events:none}
+.support__grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,6vw,90px);align-items:center}
+.support .eyebrow{color:#fff}
+.support .h-section em{color:var(--ink)}
+.support .lead{margin-top:24px;color:rgba(255,255,255,.9)}
+.support__calls{display:grid;gap:12px;margin-top:38px;max-width:520px}
+.callcard{display:flex;align-items:center;gap:18px;padding:16px 20px 16px 16px;border-radius:20px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);transition:background .4s,transform .5s var(--ease),color .3s}
+.callcard:hover{background:#fff;color:var(--ink);transform:translateX(8px)}
+.callcard .ico{flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:14px;background:#fff;color:var(--red)}
+.callcard:hover .ico{background:var(--red);color:#fff}
+.callcard .ico svg{width:22px;height:22px}
+.callcard small{display:block;font-size:.7rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;opacity:.75}
+.callcard strong{font:700 1.35rem/1.2 var(--f-display);letter-spacing:-.01em}
+.callcard .go{margin-left:auto;width:20px;height:20px;transition:transform .4s var(--ease)}
+.callcard:hover .go{transform:translateX(4px)}
+.clock{position:relative;width:min(520px,100%);aspect-ratio:1;margin-inline:auto}
+.clock svg{width:100%;height:100%;overflow:visible}
+.clock .ring-rot{transform-box:view-box;transform-origin:200px 200px;animation:spin 40s linear infinite}
+.clock .ring-rot.rev{animation-direction:reverse;animation-duration:26s}
+.clock .ring-rot.fast{animation-duration:12s}
+.clock .hand{transform-origin:200px 200px;transition:transform .6s var(--ease)}
+.clock .hand.sec{transition:transform .35s cubic-bezier(.4,2.3,.6,1)}
+.clock .lbl{font:800 11px var(--f-body);letter-spacing:2.5px;fill:#fff;text-transform:uppercase}
+.clock .digital{font:700 34px var(--f-display);fill:#fff;letter-spacing:-.5px}
+.clock .tz{font:700 10px var(--f-body);letter-spacing:2.4px;fill:rgba(255,255,255,.8);text-transform:uppercase}
+@media (max-width:900px){.support__grid{grid-template-columns:1fr}.clock{width:min(420px,100%)}}
+
+/* ==========================================================================
+   12. PROCESS — horizontal journey (desktop) / vertical timeline (mobile)
+   ========================================================================== */
+.process{padding:0}
+.process__sticky{position:relative}
+.process__track{position:relative}
+.process__road{position:absolute;left:0;top:0;pointer-events:none;overflow:visible;z-index:0}
+.process__road .base{fill:none;stroke:rgba(22,30,45,.14);stroke-width:2;stroke-dasharray:3 9;stroke-linecap:round}
+.process__road .fill{fill:none;stroke:var(--red);stroke-width:3;stroke-linecap:round}
+.process__truck{position:absolute;left:0;top:0;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -12px rgba(22,30,45,.7);z-index:3;will-change:transform}
+.process__truck svg{width:28px;height:28px}
+.process__intro .lead{margin-top:24px}
+.process__hint{display:inline-flex;align-items:center;gap:12px;margin-top:34px;font:700 .72rem/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.process__hint svg{width:34px;height:14px;animation:nudge 1.6s var(--ease-io) infinite}
+@keyframes nudge{50%{transform:translateX(8px)}}
+.step{position:relative;z-index:1}
+.step__num{position:absolute;font:800 clamp(7rem,13vw,13rem)/.8 var(--f-display);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px rgba(22,30,45,.12);pointer-events:none;transition:color .8s,-webkit-text-stroke-color .8s}
+.step.is-active .step__num{-webkit-text-stroke-color:rgba(237,32,39,.5)}
+.step__media{position:relative;overflow:hidden;border-radius:var(--radius);background:var(--paper-2);box-shadow:0 40px 70px -40px rgba(22,30,45,.6);transition:clip-path 1.3s var(--ease)}
+.step__media img{width:100%;height:100%;object-fit:cover;transform:scale(1.25);transition:transform 1.8s var(--ease)}
+.step.is-active .step__media img{transform:scale(1)}
+/* A distinct transition per stage */
+.step--1 .step__media{clip-path:circle(0% at 30% 60%)}
+.step--1.is-active .step__media{clip-path:circle(120% at 30% 60%)}
+.step--2 .step__media{clip-path:inset(0 100% 0 0 round var(--radius))}
+.step--2.is-active .step__media{clip-path:inset(0 0 0 0 round var(--radius))}
+.step--3 .step__media{clip-path:polygon(0 100%,0 100%,0 100%,0 100%)}
+.step--3.is-active .step__media{clip-path:polygon(0 0,140% 0,100% 100%,0 100%)}
+.step--4 .step__media{clip-path:inset(0 50% 0 50% round var(--radius))}
+.step--4.is-active .step__media{clip-path:inset(0 0 0 0 round var(--radius))}
+.step__medal{position:absolute;width:118px;height:118px;border-radius:50%;padding:6px;background:#fff;box-shadow:0 20px 40px -18px rgba(22,30,45,.6);z-index:2;transform:scale(.4) rotate(-40deg);opacity:0;transition:transform 1s var(--ease),opacity .6s}
+.step__medal img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.step__medal::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1.5px dashed rgba(237,32,39,.6);animation:spin 14s linear infinite}
+.step.is-active .step__medal{transform:none;opacity:1}
+.step__text{position:relative}
+.step__kicker{font:800 .72rem/1 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:var(--red)}
+.step__text h3{margin-top:12px;font:700 clamp(1.8rem,2.8vw,2.7rem)/1 var(--f-display);letter-spacing:-.035em}
+.step__text p{margin-top:14px;color:var(--muted);max-width:380px}
+.step__text>*{transition:opacity .8s var(--ease),transform 1s var(--ease)}
+.step:not(.is-active) .step__text>*{opacity:.18;transform:translateY(16px)}
+.step.is-active .step__text>:nth-child(2){transition-delay:.08s}
+.step.is-active .step__text>:nth-child(3){transition-delay:.16s}
+.process__end h3{font:700 clamp(2rem,3.4vw,3.2rem)/1 var(--f-display);letter-spacing:-.035em}
+.process__end p{margin:16px 0 28px;color:var(--muted);max-width:360px}
+.process__hud{display:none}
+
+/* Desktop: pinned horizontal track */
+@media (min-width:1024px){
+  html.js:not(.rm) .process{height:400vh}
+  html.js:not(.rm) .process__sticky{position:sticky;top:0;height:100vh;overflow:hidden}
+  html.js:not(.rm) .process__track{display:flex;align-items:center;height:100%;width:max-content;padding:0 12vw 0 var(--gutter);gap:7vw;will-change:transform}
+  html.js:not(.rm) .process__intro{width:min(480px,34vw);flex:none;padding-top:var(--nav-h)}
+  html.js:not(.rm) .step{flex:none;width:min(660px,44vw);height:100%;padding-top:var(--nav-h)}
+  html.js:not(.rm) .step__media{position:absolute;left:0;width:78%;height:40vh}
+  html.js:not(.rm) .step__text{position:absolute;left:10%;width:80%}
+  html.js:not(.rm) .step:nth-of-type(odd) .step__media{top:calc(var(--nav-h) + 6vh)}
+  html.js:not(.rm) .step:nth-of-type(odd) .step__text{bottom:8vh}
+  html.js:not(.rm) .step:nth-of-type(odd) .step__medal{left:calc(78% - 59px);top:calc(var(--nav-h) + 6vh + 40vh - 59px)}
+  html.js:not(.rm) .step:nth-of-type(odd) .step__num{right:0;bottom:22vh}
+  html.js:not(.rm) .step:nth-of-type(even) .step__media{bottom:8vh}
+  html.js:not(.rm) .step:nth-of-type(even) .step__text{top:calc(var(--nav-h) + 6vh)}
+  html.js:not(.rm) .step:nth-of-type(even) .step__medal{left:calc(78% - 59px);top:calc(100% - 8vh - 40vh - 59px)}
+  html.js:not(.rm) .step:nth-of-type(even) .step__num{right:0;top:calc(var(--nav-h) + 4vh)}
+  html.js:not(.rm) .process__end{flex:none;width:min(420px,30vw);padding-top:var(--nav-h)}
+  html.js:not(.rm) .process__hud{position:absolute;left:var(--gutter);right:var(--gutter);bottom:30px;display:flex;align-items:center;gap:20px;z-index:4;font:800 .72rem/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .process__hud .bars{display:grid;grid-template-columns:repeat(4,60px);gap:8px}
+  .process__hud .bars i{height:3px;border-radius:3px;background:rgba(22,30,45,.12);overflow:hidden;position:relative}
+  .process__hud .bars i::after{content:"";position:absolute;inset:0;background:var(--red);transform:scaleX(var(--f,0));transform-origin:left}
+  .process__hud b{color:var(--ink);font-size:.9rem}
+}
+/* Tablet/mobile + reduced motion: vertical timeline */
+@media (max-width:1023px){
+  .process{padding:clamp(96px,12vw,150px) 0 calc(clamp(96px,12vw,150px) + var(--lift))}
+}
+html.rm .process{padding:clamp(96px,12vw,150px) 0 calc(clamp(96px,12vw,150px) + var(--lift))}
+@media (max-width:1023px){
+  .process__track{width:min(1280px,100% - var(--gutter)*2);margin-inline:auto;display:grid;gap:80px;padding-left:64px}
+  .process__intro{margin-left:-64px}
+  .step{display:grid;gap:22px}
+  .step__num{right:0;top:-30px;font-size:clamp(5rem,22vw,9rem)}
+  .step__media{aspect-ratio:16/10}
+  .step__medal{left:-64px;top:-6px;width:52px;height:52px;padding:3px;transform:none;opacity:1}
+  .step__medal::after{inset:-5px}
+  .process__end{margin-left:-64px}
+}
+html.rm .process__track{width:min(1280px,100% - var(--gutter)*2);margin-inline:auto;display:grid;gap:80px;padding-left:64px}
+html.rm .process__intro,html.rm .process__end{margin-left:-64px}
+html.rm .step{display:grid;gap:22px}
+html.rm .step__media{aspect-ratio:16/10;clip-path:none}
+html.rm .step__medal{left:-64px;top:-6px;width:52px;height:52px;padding:3px;transform:none;opacity:1}
+html.rm .step__num{right:0;top:-30px;font-size:8rem}
+
+/* ==========================================================================
+   13. PRICING
+   ========================================================================== */
+.pricing{overflow:hidden}
+.pricing__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(40px,7vw,110px);align-items:center}
+.pricing .lead{margin-top:24px}
+.pillars{display:grid;gap:4px;margin:38px 0 40px}
+.pillar{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:20px 0;border-top:1px solid var(--line)}
+.pillar:last-child{border-bottom:1px solid var(--line)}
+.pillar__n{font:800 .78rem/1.9 var(--f-body);letter-spacing:.12em;color:var(--red)}
+.pillar h3{font:700 1.3rem/1.2 var(--f-display);letter-spacing:-.02em}
+.pillar p{margin-top:6px;color:var(--muted);font-size:.96rem}
+.pricing__visual{position:relative;display:grid;place-items:center;min-height:560px}
+.pricing__visual .orb{position:absolute;border-radius:50%;border:1px solid var(--line)}
+.pricing__visual .orb--1{width:520px;height:520px;animation:spin 50s linear infinite;border-style:dashed}
+.pricing__visual .orb--2{width:380px;height:380px;background:radial-gradient(circle at 30% 30%,rgba(26,63,81,.12),transparent 70%)}
+.pricing__visual .orb--1::after{content:"";position:absolute;top:50%;left:-6px;width:12px;height:12px;border-radius:50%;background:var(--red)}
+.qcard{position:relative;width:min(420px,100%);perspective:1200px;z-index:1}
+.qcard__inner{position:relative;padding:30px;border-radius:26px;background:#fff;box-shadow:0 50px 90px -40px rgba(22,30,45,.55),0 0 0 1px var(--line);transform-style:preserve-3d;transform:rotateX(8deg) rotateY(-14deg);transition:transform .8s var(--ease)}
+.qcard__inner::before{content:"";position:absolute;inset:14px -14px -14px 14px;border-radius:26px;background:var(--slate);z-index:-1;transform:translateZ(-60px);opacity:.95}
+.qcard__head{display:flex;align-items:center;gap:14px;padding-bottom:20px;border-bottom:1.5px dashed var(--line);transform:translateZ(30px)}
+.qcard__head img{width:74px;height:auto;border-radius:8px}
+.qcard__head strong{display:block;font:700 1.15rem/1.2 var(--f-display)}
+.qcard__head span{font-size:.78rem;color:var(--muted);font-weight:700}
+.qcard__rows{margin:10px 0 18px;transform:translateZ(20px)}
+.qcard__rows li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.88rem;opacity:0;transform:translateX(-14px);transition:opacity .6s,transform .8s var(--ease);transition-delay:calc(var(--i) * 90ms + .3s)}
+.qcard.is-in .qcard__rows li{opacity:1;transform:none}
+.qcard__rows span{color:var(--muted);font-weight:600}
+.qcard__rows b{text-align:right;font-weight:800}
+.qcard__rows b.ok{color:#178a4c;display:inline-flex;align-items:center;gap:6px}
+.qcard__rows b.ok svg{width:16px;height:16px}
+.qcard__total{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;margin-bottom:18px;border-radius:16px;background:var(--paper);transform:translateZ(40px)}
+.qcard__total span{font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.qcard__total strong{font:700 1.25rem/1 var(--f-display);color:var(--red)}
+.qcard .btn{transform:translateZ(50px)}
+.seal{position:absolute;left:-30px;bottom:-14px;width:150px;height:150px;z-index:2;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 20px 40px -18px rgba(22,30,45,.7)}
+.seal svg.ring{position:absolute;inset:8px;width:calc(100% - 16px);height:calc(100% - 16px);animation:spin 20s linear infinite reverse}
+.seal svg.ring text{font:800 8.6px var(--f-body);fill:#fff;text-transform:uppercase}
+.seal b{font:400 2.4rem/1 var(--f-serif);font-style:italic;color:var(--red)}
+@media (max-width:1000px){.pricing__grid{grid-template-columns:1fr}.pricing__visual{min-height:520px}.pricing__visual .orb--1{width:440px;height:440px}}
+@media (max-width:560px){.pricing__visual .orb--1{width:340px;height:340px}.pricing__visual .orb--2{width:260px;height:260px}.seal{width:104px;height:104px;left:-6px;bottom:-14px}.qcard__inner{padding:22px;transform:none}}
+
+/* ==========================================================================
+   14. REVIEWS — 3D carousel
+   ========================================================================== */
+.reviews{color:#fff;overflow:hidden}
+.reviews::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 50% 0%,rgba(255,255,255,.1),transparent 70%),radial-gradient(40% 40% at 100% 100%,rgba(237,32,39,.18),transparent 70%);pointer-events:none}
+.reviews .container{position:relative}
+.carousel{position:relative}
+.carousel__stage{position:relative;height:440px;perspective:1600px;transform-style:preserve-3d;touch-action:pan-y}
+.review{position:absolute;left:50%;top:0;width:min(560px,86vw);margin-left:calc(min(560px,86vw) / -2);height:100%;padding:clamp(28px,4vw,46px);border-radius:30px;background:#fff;color:var(--ink);box-shadow:0 50px 80px -40px rgba(0,0,0,.6);display:flex;flex-direction:column;transition:transform 1s var(--ease),opacity .8s var(--ease),filter .8s;will-change:transform;cursor:grab;user-select:none}
+.review:not(.is-active){filter:saturate(.6) brightness(.92)}
+.review__q{position:absolute;right:30px;top:6px;font:400 9rem/1 var(--f-serif);color:var(--red);opacity:.16;transform:scale(.4) rotate(-20deg);transform-origin:70% 60%;transition:transform 1.1s var(--ease),opacity .8s}
+.review.is-active .review__q{transform:none;opacity:1}
+.stars{display:flex;gap:4px;color:#f5a623}
+.stars svg{width:20px;height:20px;transform:scale(0) rotate(-90deg);transition:transform .6s var(--ease)}
+.review.is-active .stars svg{transform:none}
+.review.is-active .stars svg:nth-child(2){transition-delay:.08s}.review.is-active .stars svg:nth-child(3){transition-delay:.16s}.review.is-active .stars svg:nth-child(4){transition-delay:.24s}.review.is-active .stars svg:nth-child(5){transition-delay:.32s}
+.review blockquote{margin-top:24px;font:500 clamp(1.1rem,1.6vw,1.35rem)/1.55 var(--f-body);color:var(--ink)}
+.review figcaption{display:flex;align-items:center;gap:14px;margin-top:auto;padding-top:22px;border-top:1px solid var(--line)}
+.review figcaption img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.review figcaption strong{display:block;font:700 1.05rem/1.2 var(--f-display)}
+.review figcaption span{font-size:.86rem;color:var(--muted)}
+.carousel__controls{display:flex;align-items:center;justify-content:center;gap:22px;margin-top:44px}
+.carousel__btn{display:grid;place-items:center;width:56px;height:56px;border-radius:50%;border:1px solid rgba(255,255,255,.3);color:#fff;transition:background .4s,border-color .4s,color .3s}
+.carousel__btn:hover{background:#fff;color:var(--ink);border-color:#fff}
+.carousel__btn svg{width:20px;height:20px}
+.carousel__dots{display:flex;gap:10px}
+.carousel__dots button{position:relative;width:34px;height:4px;border-radius:4px;background:rgba(255,255,255,.25);overflow:hidden}
+.carousel__dots button::after{content:"";position:absolute;inset:0;background:#fff;transform:scaleX(0);transform-origin:left}
+.carousel__dots button[aria-current="true"]::after{animation:dotFill var(--dur,6s) linear forwards}
+.carousel.is-paused .carousel__dots button[aria-current="true"]::after,.rm .carousel__dots button[aria-current="true"]::after{animation:none;transform:scaleX(1)}
+@keyframes dotFill{to{transform:scaleX(1)}}
+.reviews__links{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-top:34px}
+.reviews__links .link-arrow{color:rgba(255,255,255,.85)}
+@media (max-width:640px){.carousel__stage{height:480px}}
+
+/* ==========================================================================
+   15. FAQ
+   ========================================================================== */
+.faq__grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,7vw,110px);align-items:start}
+.faq__aside{position:sticky;top:calc(var(--nav-h) + 40px)}
+.faq__aside .lead{margin-top:22px}
+.faq__help{margin-top:34px;padding:24px;border-radius:22px;background:#fff;box-shadow:0 30px 60px -40px rgba(22,30,45,.5)}
+.faq__help strong{display:block;font:700 1.2rem/1.2 var(--f-display)}
+.faq__help p{margin:6px 0 16px;color:var(--muted);font-size:.94rem}
+.faq__help .row{display:flex;gap:10px;flex-wrap:wrap}
+.acc{border-top:1px solid var(--line)}
+.acc__item{border-bottom:1px solid var(--line)}
+.acc__btn{display:flex;align-items:center;gap:20px;width:100%;padding:26px 0;text-align:left;font:700 clamp(1.1rem,1.6vw,1.32rem)/1.3 var(--f-display);letter-spacing:-.015em;transition:color .3s}
+.acc__btn .n{flex:none;font:800 .72rem/1 var(--f-body);letter-spacing:.12em;color:var(--red);width:26px}
+.acc__btn .t{flex:1}
+.acc__btn .x{position:relative;flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);transition:background .4s,border-color .4s,transform .6s var(--ease)}
+.acc__btn .x::before,.acc__btn .x::after{content:"";position:absolute;left:50%;top:50%;width:13px;height:1.8px;margin:-.9px 0 0 -6.5px;background:currentColor;border-radius:2px;transition:transform .5s var(--ease)}
+.acc__btn .x::after{transform:rotate(90deg)}
+.acc__btn:hover{color:var(--red)}
+.acc__item.is-open .acc__btn .x{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(180deg)}
+.acc__item.is-open .acc__btn .x::after{transform:rotate(0)}
+.acc__panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s var(--ease)}
+.acc__item.is-open .acc__panel{grid-template-rows:1fr}
+.acc__panel>div{overflow:hidden}
+.acc__panel p{padding:0 60px 28px 46px;color:var(--muted);opacity:0;transform:translateY(-8px);transition:opacity .5s,transform .6s var(--ease)}
+.acc__item.is-open .acc__panel p{opacity:1;transform:none;transition-delay:.12s}
+.acc__panel a{color:var(--red);font-weight:700}
+@media (max-width:900px){.faq__grid{grid-template-columns:1fr}.faq__aside{position:static}.acc__panel p{padding:0 0 24px 46px}}
+
+/* ==========================================================================
+   16. CONTACT / QUOTE FORM
+   ========================================================================== */
+.contact{overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(45% 50% at 0% 0%,rgba(237,32,39,.2),transparent 70%),radial-gradient(50% 60% at 100% 100%,rgba(26,63,81,.95),transparent 70%);pointer-events:none}
+.contact__grid{position:relative;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,90px);align-items:start}
+.h-xl{font:800 clamp(2.6rem,6vw,5.8rem)/.92 var(--f-display);letter-spacing:-.045em;margin-top:.4em}
+.contact .lead{margin-top:26px;max-width:480px}
+.cinfo{display:grid;gap:10px;margin-top:40px}
+.cinfo a,.cinfo div{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-light);transition:padding .5s var(--ease),color .3s}
+.cinfo a:hover{padding-left:10px;color:#ff6a5a}
+.cinfo .ico{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid var(--line-light);color:#fff}
+.cinfo .ico svg{width:20px;height:20px}
+.cinfo small{display:block;font-size:.68rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.cinfo strong{font-weight:700;font-size:1.02rem;word-break:break-word}
+.qform{position:relative;padding:clamp(24px,3.4vw,44px);border-radius:32px;background:#fff;color:var(--ink);box-shadow:0 60px 100px -50px rgba(0,0,0,.8)}
+.qform__head{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:26px}
+.qform__head h3{font:700 clamp(1.5rem,2.3vw,2rem)/1.05 var(--f-display);letter-spacing:-.03em}
+.qform__head p{margin-top:6px;color:var(--muted);font-size:.92rem}
+.qform__head .tag{flex:none;padding:8px 12px;border-radius:999px;background:var(--paper);font:800 .64rem/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--slate)}
+.fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.fgrid .full{grid-column:1/-1}
+.field{position:relative}
+.field input,.field select,.field textarea{width:100%;padding:24px 16px 10px;border-radius:14px;border:1.5px solid var(--line);background:var(--paper);font-size:.98rem;font-weight:600;outline:none;appearance:none;-webkit-appearance:none;transition:border-color .3s,background .3s,box-shadow .3s}
+.field textarea{min-height:110px;resize:vertical}
+.field select{padding-right:40px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%23161e2d' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.field select:invalid,.field select option[value=""]{color:var(--muted)}
+.field input[type="date"]{min-height:58px}
+.field label{position:absolute;left:17px;top:18px;font-size:.95rem;font-weight:600;color:var(--muted);pointer-events:none;transform-origin:left top;transition:transform .35s var(--ease),color .3s}
+.field label b{color:var(--red)}
+.field input:focus+label,.field input:not(:placeholder-shown)+label,.field textarea:focus+label,.field textarea:not(:placeholder-shown)+label,.field.is-static label{transform:translateY(-10px) scale(.76);color:var(--slate)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--slate);background:#fff;box-shadow:0 0 0 4px rgba(26,63,81,.1)}
+.field.has-error input,.field.has-error select,.field.has-error textarea{border-color:var(--red);background:#fff6f6}
+.field .err{display:block;max-height:0;overflow:hidden;font-size:.78rem;font-weight:700;color:var(--red-2);transition:max-height .4s var(--ease),margin .4s}
+.field.has-error .err{max-height:40px;margin-top:6px}
+.route-field{display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);align-items:center}
+.route-viz{position:relative;height:58px}
+.route-viz svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.route-viz .ln{fill:none;stroke:var(--line);stroke-width:2;stroke-dasharray:3 5}
+.route-viz .ln-on{fill:none;stroke:var(--red);stroke-width:2;stroke-dasharray:64;stroke-dashoffset:64;transition:stroke-dashoffset 1s var(--ease)}
+.route-viz .truck{position:absolute;left:4px;top:50%;width:26px;height:26px;margin-top:-13px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;transition:left 1.1s var(--ease),background .4s}
+.route-viz .truck svg{position:static;width:14px;height:14px}
+.route-field.has-route .ln-on{stroke-dashoffset:0}
+.route-field.has-route .truck{left:calc(100% - 30px);background:var(--red)}
+.qform__submit{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:22px}
+.qform__submit small{color:var(--muted);font-size:.82rem;max-width:300px}
+.qform__submit .btn[disabled]{opacity:.7;pointer-events:none}
+.qform .spinner{width:16px;height:16px;border-radius:50%;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;animation:spin .8s linear infinite;display:none}
+.qform.is-busy .spinner{display:block}
+.qstatus{margin-top:18px;border-radius:16px;font-size:.94rem;font-weight:600}
+.qstatus:empty{display:none}
+.qstatus .box{padding:16px 18px;border-radius:16px}
+.qstatus .ok{background:#eaf7ef;color:#11663a}
+.qstatus .bad{background:#fff1f1;color:#8f1015}
+.qstatus .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+@media (max-width:1000px){.contact__grid{grid-template-columns:1fr}}
+@media (max-width:560px){.fgrid{grid-template-columns:1fr}.route-field{grid-template-columns:1fr;gap:10px}.route-viz{display:none}}
+
+/* ==========================================================================
+   17. FOOTER, FLOATING ACTIONS
+   ========================================================================== */
+.footer{position:relative;background:var(--ink-2);color:rgba(255,255,255,.72);padding:clamp(80px,9vw,120px) 0 30px;overflow:hidden;margin-top:calc(var(--lift) * -1);border-radius:var(--lift) var(--lift) 0 0}
+.footer__grid{display:grid;grid-template-columns:1.3fr .8fr .9fr .8fr 1.35fr;gap:40px}
+.footer__brand .logo{display:inline-flex;background:#fff;border-radius:16px;padding:6px 14px}
+.footer__brand .logo img{height:64px;width:auto}
+.footer__brand p{margin-top:20px;max-width:320px;font-size:.94rem}
+.footer h4{font:800 .72rem/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:#fff;margin-bottom:20px}
+.footer li+li{margin-top:10px}
+.footer a{transition:color .3s}
+.footer a:hover{color:#fff}
+.footer__links a{display:inline-block;position:relative}
+.footer__links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--red);transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.footer__links a:hover::after{transform:scaleX(1);transform-origin:left}
+.footer__contact li{display:flex;gap:10px;font-size:.94rem}
+.footer__contact svg{flex:none;width:17px;height:17px;margin-top:4px;color:var(--red)}
+.footer__social{display:flex;gap:10px;margin-top:22px}
+.footer__social a{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1px solid var(--line-light);font-weight:700;font-size:.86rem;color:#fff}
+.footer__social a:hover{background:#25d366;border-color:#25d366}
+.footer__social svg{width:18px;height:18px}
+.footer__mark{margin-top:70px;font:800 clamp(4rem,17vw,17rem)/.8 var(--f-display);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.12);white-space:nowrap;text-align:center;user-select:none;background:linear-gradient(90deg,rgba(237,32,39,.0),rgba(237,32,39,.5),rgba(237,32,39,0)) no-repeat;background-size:40% 100%;-webkit-background-clip:text;background-clip:text;animation:sweep 7s var(--ease-io) infinite}
+@keyframes sweep{0%{background-position:-60% 0}100%{background-position:160% 0}}
+.footer__bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:30px;padding-top:24px;border-top:1px solid var(--line-light);font-size:.84rem}
+@media (max-width:1100px){.footer__grid{grid-template-columns:repeat(3,minmax(0,1fr))}.footer__brand{grid-column:1/-1}}
+@media (max-width:640px){.footer__grid{grid-template-columns:1fr 1fr}.footer__contact-col{grid-column:1/-1}}
+
+.totop{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom));z-index:100;width:58px;height:58px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 18px 36px -16px rgba(0,0,0,.6);opacity:0;transform:translateY(24px) scale(.8);pointer-events:none;transition:opacity .5s,transform .6s var(--ease),background .4s}
+.totop.is-on{opacity:1;transform:none;pointer-events:auto}
+.totop:hover{background:var(--red)}
+.totop svg.ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.totop svg.ring circle{fill:none;stroke-width:2.5}
+.totop svg.ring .bg{stroke:rgba(255,255,255,.15)}
+.totop svg.ring .fg{stroke:var(--red);stroke-linecap:round;stroke-dasharray:157;stroke-dashoffset:157}
+.totop:hover svg.ring .fg{stroke:#fff}
+.totop .arrow{position:relative;width:20px;height:20px;overflow:hidden}
+.totop .arrow svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .5s var(--ease)}
+.totop .arrow svg+svg{transform:translateY(120%)}
+.totop:hover .arrow svg:first-child{transform:translateY(-120%)}
+.totop:hover .arrow svg+svg{transform:none}
+
+.fab-call{position:fixed;left:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:100;display:none;align-items:center;gap:10px;padding:14px 20px 14px 14px;border-radius:999px;background:var(--red);color:#fff;font:800 .8rem/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;box-shadow:0 18px 36px -12px rgba(237,32,39,.8);opacity:0;transform:translateY(30px);pointer-events:none;transition:opacity .5s,transform .6s var(--ease)}
+.fab-call .ico{position:relative;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#fff;color:var(--red)}
+.fab-call .ico::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #fff;animation:ping 1.8s var(--ease) infinite}
+.fab-call svg{width:16px;height:16px}
+.fab-call.is-on{opacity:1;transform:none;pointer-events:auto}
+@media (max-width:900px){.fab-call{display:inline-flex}.totop{width:52px;height:52px}}
+
+/* ==========================================================================
+   18. REDUCED MOTION
+   ========================================================================== */
+html.rm .hero{height:auto}
+html.rm .hero__sticky{position:relative}
+html.rm .about{margin-top:calc(var(--lift) * -1)}
+html.rm .hero__phases,html.rm .hero__cue,html.rm .hero__hud{display:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;transition-delay:0s!important}
+  .ticker__row{animation:none!important}
+  .hero__line>span,.hero__lead,.hero__ctas{animation:none!important;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<!-- ======================================================================
+     ICON SPRITE
+     ====================================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 21.5s-7-6.1-7-11.8a7 7 0 0 1 14 0c0 5.7-7 11.8-7 11.8z"/><circle cx="12" cy="9.6" r="2.6"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h16M14 6l6 6-6 6"/></symbol>
+    <symbol id="i-arrow-l" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 12H4M10 6l-6 6 6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 20V4M6 10l6-6 6 6"/></symbol>
+    <symbol id="i-arrow-ur" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M8 7h9v9"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path fill="currentColor" d="M8.8 7.6c.3-.3.8-.3 1 .1l.9 1.9c.1.3 0 .6-.2.8l-.6.6c.6 1.3 1.6 2.3 2.9 2.9l.6-.6c.2-.2.5-.3.8-.2l1.9.9c.4.2.4.7.1 1l-.8.9c-.5.5-1.2.6-1.9.4-2.6-.9-4.7-3-5.6-5.6-.2-.7-.1-1.4.4-1.9z"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 32 22"><g fill="currentColor"><path d="M1 3a2 2 0 0 1 2-2h15a2 2 0 0 1 2 2v12H1z"/><path d="M21 6h5.2a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .4 1.2V15H21z" opacity=".85"/><rect x="0" y="14.5" width="31" height="3" rx="1.2"/></g><g fill="currentColor" stroke="#161e2d" stroke-width="1.6"><circle cx="7" cy="18" r="3"/><circle cx="25" cy="18" r="3"/></g></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v5.6c0 4.6-3.1 7.9-7.5 9.4-4.4-1.5-7.5-4.8-7.5-9.4V6z"/><path d="M8.6 12.2l2.4 2.4 4.6-4.8"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.8"/><path d="M12 7.2V12l3.2 2.1"/></g></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M3.5 12.3V4.5a1 1 0 0 1 1-1h7.8l8.4 8.4a1.4 1.4 0 0 1 0 2l-6.8 6.8a1.4 1.4 0 0 1-2 0z"/><circle cx="8.2" cy="8.2" r="1.6"/></g></symbol>
+    <symbol id="i-team" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="9" cy="8" r="3.4"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0"/><path d="M15.8 4.8a3.4 3.4 0 0 1 0 6.4M18 14.2A6 6 0 0 1 21.2 20"/></g></symbol>
+    <symbol id="i-plan" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 3h6v3H9zM8.5 11h7M8.5 14.5h7M8.5 18h4"/></g></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8.8"/><path d="M3.4 12h17.2M12 3.2c2.8 3.2 2.8 14.4 0 17.6M12 3.2c-2.8 3.2-2.8 14.4 0 17.6"/></g></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 7.5L12 3l9 4.5v9L12 21l-9-4.5z"/><path d="M3 7.5l9 4.5 9-4.5M12 12v9M7.5 5.2l9 4.6"/></g></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"><span id="pageProgress"></span></div>
+
+<!-- ======================================================================
+     NAVIGATION
+     ====================================================================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#home" aria-label="Mahendra Packers and Movers — back to top">
+      <img src="assets/site/logo.png" width="200" height="100" alt="Mahendra Packers and Movers">
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <ul>
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#about" data-nav="about">About Us</a></li>
+        <li><a href="#services" data-nav="services">Services</a></li>
+        <li><a href="#coverage" data-nav="coverage">Coverage</a></li>
+        <li><a href="#process" data-nav="process">How It Works</a></li>
+        <li><a href="#reviews" data-nav="reviews">Reviews</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+      <span class="nav__indicator" aria-hidden="true"></span>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__phone" href="tel:+918712321238" aria-label="Call +91 87123 21238">
+        <span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <span class="txt">+91 87123 21238</span>
+      </a>
+      <a class="btn btn--red btn--sm" href="#quote" data-magnetic><span class="btn__label">Get a Free Quote</span></a>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-label="Site menu" inert>
+  <ol>
+    <li><a href="#home" style="--i:0">Home</a></li>
+    <li><a href="#about" style="--i:1">About Us</a></li>
+    <li><a href="#services" style="--i:2">Services</a></li>
+    <li><a href="#coverage" style="--i:3">Coverage</a></li>
+    <li><a href="#process" style="--i:4">How It Works</a></li>
+    <li><a href="#reviews" style="--i:5">Reviews</a></li>
+    <li><a href="#contact" style="--i:6">Contact</a></li>
+  </ol>
+  <div class="menu__foot">
+    <a href="tel:+918712321238">+91 87123 21238</a>
+    <a href="tel:+919494344193">+91 94943 44193</a>
+    <a href="mailto:mahendrapackersandmovers@gmail.com">mahendrapackersandmovers@gmail.com</a>
+    <a class="btn btn--red" href="#quote"><span class="btn__label">Get a Free Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ======================================================================
+     HERO — scroll-scrubbed frame sequence (canvas)
+     ====================================================================== -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="hero__sticky">
+    <div class="hero__stage">
+      <canvas id="heroCanvas" role="img" aria-label="Animated relocation journey: a truck arrives at a family home, movers pack and load belongings, the truck travels along the highway and the family's belongings are unloaded at their new home."></canvas>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__dim" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__intro" id="heroIntro">
+      <p class="hero__eyebrow"><span class="dot" aria-hidden="true"></span>Packers &amp; Movers · Guntakal · PAN India</p>
+      <h1 class="hero__title" id="hero-title">
+        <span class="hero__line"><span>Moving Beyond Boundaries<span class="stop">.</span></span></span>
+        <span class="hero__line"><span>Delivering <em>Peace of Mind</em><span class="stop">.</span></span></span>
+      </h1>
+      <p class="hero__lead">From household shifting to business relocation, experience safe, secure and hassle-free moving solutions with Mahendra Packers and Movers.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--red" href="tel:+918712321238" data-magnetic><span class="pulse" aria-hidden="true"></span><span class="btn__label">Call Now</span></a>
+        <a class="btn btn--glass" href="#quote" data-magnetic><span class="btn__label">Get Free Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <div class="hero__phases" id="heroPhases">
+      <div class="phase phase--left" data-start=".055" data-end=".15">
+        <p class="phase__eyebrow"><b>01</b><i></i>The Beginning</p>
+        <h2 class="phase__title" data-phase-title>Every Journey Begins With a <em>Move</em></h2>
+        <p class="phase__sub">Book our service for a safe and seamless relocation experience.</p>
+      </div>
+      <div class="phase phase--right" data-start=".19" data-end=".53">
+        <p class="phase__eyebrow">Packing<i></i><b>02</b></p>
+        <h2 class="phase__title" data-phase-title>Your Belongings Deserve <em>Expert Care</em></h2>
+        <p class="phase__sub">Our expert team safely packs and loads all your belongings with top-quality materials.</p>
+      </div>
+      <div class="phase phase--left" data-start=".585" data-end=".80">
+        <p class="phase__eyebrow"><b>03</b><i></i>Transportation</p>
+        <h2 class="phase__title" data-phase-title>Safe. Secure. <em>Always Moving Forward.</em></h2>
+        <p class="phase__sub">A modern fleet focused on safe and timely delivery of your goods anywhere in India.</p>
+      </div>
+      <div class="phase phase--center" data-start=".845" data-end="9">
+        <p class="phase__eyebrow"><b>04</b><i></i>Arrival</p>
+        <h2 class="phase__title" data-phase-title>Your New Beginning <em>Starts Here</em></h2>
+        <p class="phase__sub">We unload, unpack and arrange your items at your new location, hassle-free.</p>
+      </div>
+    </div>
+
+    <div class="hero__cue" id="heroCue" aria-hidden="true">
+      <span class="mouse"></span>
+      <span>Scroll to begin the journey</span>
+      <span class="trail"></span>
+    </div>
+
+    <div class="hero__hud" id="heroHud">
+      <div class="hud__top">
+        <div class="hud__chapters" role="group" aria-label="Jump to a chapter of the journey">
+          <button type="button" data-chapter="0" class="is-active"><b>01</b><span>Beginning</span></button>
+          <button type="button" data-chapter="1"><b>02</b><span>Packing</span></button>
+          <button type="button" data-chapter="2"><b>03</b><span>Transport</span></button>
+          <button type="button" data-chapter="3"><b>04</b><span>Arrival</span></button>
+        </div>
+        <span class="hud__counter" id="heroCounter" aria-live="off">Loading journey…</span>
+      </div>
+      <div class="hud__rail" aria-hidden="true">
+        <span class="hud__fill"></span>
+        <span class="hud__marks"><i style="left:0"></i><i style="left:15%"></i><i style="left:57%"></i><i style="left:82%"></i><i style="left:100%"></i></span>
+        <span class="hud__truck"><svg><use href="#i-truck"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     ABOUT / WHY CHOOSE US
+     ====================================================================== -->
+<section class="sec about lift" id="about" aria-labelledby="about-title">
+  <div class="about__marquee" aria-hidden="true"><div data-drift="-0.22">Safe · Secure · Timely · Trusted · Safe · Secure · Timely ·</div></div>
+
+  <div class="container about__grid">
+    <div class="about__media">
+      <figure class="about__img about__img--main" data-reveal="clip-up">
+        <img class="zoom" data-parallax="-0.05" src="assets/img/packed-room.webp" width="1600" height="900" alt="Household furniture wrapped and packed by the Mahendra Packers and Movers team" loading="lazy" decoding="async">
+      </figure>
+      <figure class="about__img about__img--tall" data-reveal="clip-down" style="--d:.18s">
+        <img class="zoom" data-parallax="0.06" src="assets/img/packed-furniture-tall.webp" width="900" height="1600" alt="Tall furniture wrapped in protective packing, ready for loading" loading="lazy" decoding="async">
+      </figure>
+      <figure class="about__img about__img--small" data-reveal="clip-left" style="--d:.32s">
+        <img class="zoom" src="assets/img/gallery-8.webp" width="900" height="1600" alt="Furniture secured with stretch film and packing material" loading="lazy" decoding="async">
+      </figure>
+      <div class="about__badge" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 100 100"><defs><path id="badgeCircle" d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/></defs><text data-fit-ring><textPath href="#badgeCircle">Safe · Secure · On-Time Delivery · </textPath></text></svg>
+        <svg class="core" viewBox="0 0 32 22"><use href="#i-truck"/></svg>
+      </div>
+      <svg class="about__decor about__decor--box" data-parallax="0.14" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-box"/></svg>
+      <svg class="about__decor about__decor--tape" data-parallax="-0.12" viewBox="0 0 120 40" aria-hidden="true"><rect x="4" y="10" width="112" height="20" rx="3" fill="#d9b27a" opacity=".85" transform="rotate(-8 60 20)"/><path d="M10 14l6 12M24 12l6 12M38 10l6 12M52 9l6 12M66 7l6 12M80 6l6 12M94 4l6 12" stroke="#c39759" stroke-width="2" transform="rotate(-8 60 20)"/></svg>
+      <span class="about__decor about__decor--stamp" data-parallax="0.08" aria-hidden="true">Fragile · Handle with care</span>
+    </div>
+
+    <div class="about__content">
+      <p class="eyebrow">Discover what sets us apart</p>
+      <h2 class="h-section" id="about-title" data-scrub-words>Moving Your World, One Safe Journey at a Time.</h2>
+      <p class="lead" data-reveal="rise">At Mahendra Packers and Movers, we are committed to delivering smooth and secure relocation experiences. With a team of trained professionals and a customer-first approach, we handle every move with precision and care.</p>
+      <p class="muted" data-reveal="rise" style="--d:.1s">We understand that every relocation is unique. We provide precise packing, secure loading and timely delivery of household goods, with streamlined processes and a dedicated project manager to save you time. Our team handles goods with proper tools such as rollers and pulleys, and we regularly train our staff to pack fragile items like glassware and to load heavy furniture safely.</p>
+      <p class="muted" data-reveal="rise" style="--d:.2s">Whether it's a home, office or vehicle relocation, we tailor our services to meet your specific needs — with dedicated relocation support every step of the way.</p>
+      <div class="about__sign" data-reveal="rise" style="--d:.3s">
+        <a class="btn btn--ink" href="#quote" data-magnetic><span class="btn__label">Plan My Move</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <span class="addr"><svg aria-hidden="true"><use href="#i-pin"/></svg>15/29, Gandhi Chowk, Guntakal</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container benefits" data-reveal="fade">
+    <div class="benefits__head">
+      <h3>Why choose Mahendra Packers and Movers</h3>
+      <p class="eyebrow">Six promises · One move</p>
+    </div>
+    <ol class="benefits__list">
+      <li class="benefit" style="--i:0"><span class="benefit__ico"><svg aria-hidden="true"><use href="#i-shield"/></svg></span><span class="benefit__n" aria-hidden="true">01</span><h4>Safe &amp; Secure Shifting</h4><p>We use high-quality packing materials and proven techniques to ensure your belongings are transported safely and securely.</p></li>
+      <li class="benefit" style="--i:1"><span class="benefit__ico"><svg aria-hidden="true"><use href="#i-clock"/></svg></span><span class="benefit__n" aria-hidden="true">02</span><h4>Timely Delivery</h4><p>Punctuality is our promise. Our well-planned logistics network ensures your goods reach their destination on time.</p></li>
+      <li class="benefit" style="--i:2"><span class="benefit__ico"><svg aria-hidden="true"><use href="#i-tag"/></svg></span><span class="benefit__n" aria-hidden="true">03</span><h4>Affordable Pricing</h4><p>Get the best value for your money with transparent pricing — no hidden charges, just honest rates and excellent service.</p></li>
+      <li class="benefit" style="--i:3"><span class="benefit__ico"><svg aria-hidden="true"><use href="#i-team"/></svg></span><span class="benefit__n" aria-hidden="true">04</span><h4>Skilled Moving Professionals</h4><p>Our trained team handles packing, loading, unloading and unpacking, and treats your belongings as carefully as you would.</p></li>
+      <li class="benefit" style="--i:4"><span class="benefit__ico"><svg aria-hidden="true"><use href="#i-plan"/></svg></span><span class="benefit__n" aria-hidden="true">05</span><h4>Customized Relocation Plans</h4><p>Whether it's a home, office or vehicle relocation, we tailor our services to your specific needs and budget.</p></li>
+      <li class="benefit" style="--i:5"><span class="benefit__ico"><svg aria-hidden="true"><use href="#i-globe"/></svg></span><span class="benefit__n" aria-hidden="true">06</span><h4>All-India Service Coverage</h4><p>Trusted and affordable relocation services across India, including local, domestic and interstate moves.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======================================================================
+     SERVICES — asymmetric interactive gallery
+     ====================================================================== -->
+<section class="sec services lift" id="services" aria-labelledby="services-title">
+  <div class="container">
+    <header class="sec-head sec-head--split">
+      <div>
+        <p class="eyebrow">What we do</p>
+        <h2 class="h-section" id="services-title" data-split data-reveal="words">Everything You Need. <em>One Moving Partner.</em></h2>
+      </div>
+      <p class="sec-head__aside" data-reveal="rise">Safe and efficient moving solutions designed for your peace of mind — six specialised services delivered by one trusted team.</p>
+    </header>
+
+    <nav class="svc-route" aria-label="Service index" data-reveal="fade">
+      <svg viewBox="0 0 1000 70" preserveAspectRatio="none" aria-hidden="true">
+        <path class="base" d="M0 35 Q41.7 12 83.3 35 T250 35 T416.7 35 T583.3 35 T750 35 T916.7 35 T1000 35" vector-effect="non-scaling-stroke"/>
+        <path class="draw" id="svcRouteDraw" d="M0 35 Q41.7 12 83.3 35 T250 35 T416.7 35 T583.3 35 T750 35 T916.7 35 T1000 35" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+      </svg>
+      <ol>
+        <li><a href="#svc-home" data-svc="1"><i></i><span class="lbl">01 Home</span></a></li>
+        <li><a href="#svc-office" data-svc="2"><i></i><span class="lbl">02 Office</span></a></li>
+        <li><a href="#svc-car" data-svc="3"><i></i><span class="lbl">03 Car</span></a></li>
+        <li><a href="#svc-cargo" data-svc="4"><i></i><span class="lbl">04 Cargo</span></a></li>
+        <li><a href="#svc-luggage" data-svc="5"><i></i><span class="lbl">05 Luggage</span></a></li>
+        <li><a href="#svc-insurance" data-svc="6"><i></i><span class="lbl">06 Insurance</span></a></li>
+      </ol>
+    </nav>
+
+    <div class="svc-grid">
+      <article class="svc svc--1" id="svc-home" data-reveal="clip-up" data-tilt data-svc-card="1">
+        <div class="svc__card" data-tilt-inner>
+          <div class="svc__media"><img class="zoom" src="assets/img/packed-room.webp" width="1600" height="900" alt="Living room furniture wrapped for a household move" loading="lazy" decoding="async"></div>
+          <span class="svc__num" aria-hidden="true">01</span>
+          <span class="svc__tag">Household shifting</span>
+          <div class="svc__body">
+            <h3>Home Relocation</h3>
+            <p><span>Safe and smooth household shifting with expert packing and timely delivery.</span></p>
+            <div class="svc__actions">
+              <a class="btn btn--red btn--sm" href="#quote" data-service="household"><span class="btn__label">Get a Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://mahendrapackersandmovers.com/home-relocation" target="_blank" rel="noopener">Service details<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc svc--2" id="svc-office" data-reveal="clip-left" style="--d:.1s" data-tilt data-svc-card="2">
+        <div class="svc__card" data-tilt-inner>
+          <div class="svc__media"><img class="zoom" src="assets/img/wrapped-sofa.webp" width="1600" height="900" alt="Office furniture wrapped and protected for relocation" loading="lazy" decoding="async"></div>
+          <span class="svc__num" aria-hidden="true">02</span>
+          <span class="svc__tag">Business moves</span>
+          <div class="svc__body">
+            <h3>Office Relocation</h3>
+            <p><span>Professional office relocation with minimal business disruption and maximum asset safety.</span></p>
+            <div class="svc__actions">
+              <a class="btn btn--red btn--sm" href="#quote" data-service="office"><span class="btn__label">Get a Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://mahendrapackersandmovers.com/office-relocation" target="_blank" rel="noopener">Details<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc svc--3" id="svc-car" data-reveal="tilt" style="--d:.15s" data-tilt data-svc-card="3">
+        <div class="svc__card" data-tilt-inner>
+          <div class="svc__media"><img class="zoom" src="assets/site/car.webp" width="722" height="406" alt="Loaded transport vehicle secured for an interstate move" loading="lazy" decoding="async"></div>
+          <span class="svc__num" aria-hidden="true">03</span>
+          <span class="svc__tag">Vehicle transport</span>
+          <div class="svc__body">
+            <h3>Car Relocation</h3>
+            <p><span>Specialised vehicle transportation with careful handling across cities and states.</span></p>
+            <div class="svc__actions">
+              <a class="btn btn--red btn--sm" href="#quote" data-service="vehicle"><span class="btn__label">Get a Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://mahendrapackersandmovers.com/car-transportation-service" target="_blank" rel="noopener">Details<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc svc--4" id="svc-cargo" data-reveal="clip-center" data-tilt data-svc-card="4">
+        <div class="svc__card" data-tilt-inner>
+          <div class="svc__media"><img class="zoom" src="assets/img/gallery-container.webp" width="1600" height="900" alt="Container loaded with packed goods for cargo transport" loading="lazy" decoding="async"></div>
+          <span class="svc__num" aria-hidden="true">04</span>
+          <span class="svc__tag">Local &amp; national</span>
+          <div class="svc__body">
+            <h3>Courier &amp; Cargo</h3>
+            <p><span>Reliable cargo and courier solutions for local and national deliveries.</span></p>
+            <div class="svc__actions">
+              <a class="btn btn--red btn--sm" href="#quote" data-service="courier"><span class="btn__label">Get a Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://mahendrapackersandmovers.com/courier-and-cargo" target="_blank" rel="noopener">Details<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc svc--5" id="svc-luggage" data-reveal="clip-up" style="--d:.12s" data-tilt data-svc-card="5">
+        <div class="svc__card" data-tilt-inner>
+          <div class="svc__media"><img class="zoom" src="assets/img/packed-goods.webp" width="1600" height="900" alt="Personal luggage and goods packed for door-to-door delivery" loading="lazy" decoding="async"></div>
+          <span class="svc__num" aria-hidden="true">05</span>
+          <span class="svc__tag">Door-to-door</span>
+          <div class="svc__body">
+            <h3>Luggage Delivery</h3>
+            <p><span>Door-to-door personal luggage delivery for students, travellers and individuals.</span></p>
+            <div class="svc__actions">
+              <a class="btn btn--red btn--sm" href="#quote" data-service="luggage"><span class="btn__label">Get a Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://mahendrapackersandmovers.com/luggage-delivery" target="_blank" rel="noopener">Details<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="svc svc--6" id="svc-insurance" data-reveal="clip-right" style="--d:.22s" data-tilt data-svc-card="6">
+        <div class="svc__card" data-tilt-inner>
+          <div class="svc__media"><img class="zoom" src="assets/site/insurance.webp" width="500" height="300" alt="Handshake representing goods insurance support" loading="lazy" decoding="async"></div>
+          <span class="svc__num" aria-hidden="true">06</span>
+          <span class="svc__tag">Transit protection</span>
+          <div class="svc__body">
+            <h3>Goods Insurance</h3>
+            <p><span>Insurance support to help protect valuable belongings during transit.</span></p>
+            <div class="svc__actions">
+              <a class="btn btn--red btn--sm" href="#quote" data-service="good"><span class="btn__label">Get a Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://mahendrapackersandmovers.com/goods-insurance" target="_blank" rel="noopener">Details<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     COVERAGE — interactive PAN-India visualisation
+     ====================================================================== -->
+<section class="sec coverage lift dark" id="coverage" aria-labelledby="coverage-title" data-expand>
+  <div class="container coverage__grid">
+    <div class="coverage__intro">
+      <p class="eyebrow">PAN India relocation services</p>
+      <h2 class="h-section" id="coverage-title" data-split data-reveal="words">Wherever Life Takes You, <em>We Move With You.</em></h2>
+      <p class="lead" data-reveal="rise">We offer trusted and affordable relocation services across India, including local, domestic and interstate moving. Explore the states and leading cities where Mahendra Packers and Movers provides packers and movers services.</p>
+
+      <div class="tabs" role="tablist" aria-label="Choose a state" data-reveal="rise" style="--d:.1s">
+        <button class="tab" role="tab" id="tab-ap" aria-controls="regionPanel" aria-selected="true" data-state="ap"><span class="pin"></span>Andhra Pradesh <small data-count="ap"></small></button>
+        <button class="tab" role="tab" id="tab-ts" aria-controls="regionPanel" aria-selected="false" tabindex="-1" data-state="ts"><span class="pin"></span>Telangana <small data-count="ts"></small></button>
+        <button class="tab" role="tab" id="tab-ka" aria-controls="regionPanel" aria-selected="false" tabindex="-1" data-state="ka"><span class="pin"></span>Karnataka <small data-count="ka"></small></button>
+      </div>
+
+      <div class="region" id="regionPanel" role="tabpanel" aria-labelledby="tab-ap" data-reveal="rise" style="--d:.18s">
+        <div class="region__fig">
+          <img id="regionImg" src="assets/img/cities/andhra-pradesh.webp" width="540" height="312" alt="Andhra Pradesh" loading="lazy" decoding="async">
+          <div class="region__cap"><div><span id="regionKicker">State</span><strong id="regionName">Andhra Pradesh</strong></div><span id="regionCount"></span></div>
+        </div>
+        <div class="region__body">
+          <ul class="chips" id="regionChips" aria-label="Cities served"></ul>
+          <div class="region__foot">
+            <a class="link-arrow" id="regionLink" href="https://mahendrapackersandmovers.com/packers-movers-andhra-pradesh-india" target="_blank" rel="noopener">Packers and movers in <span id="regionLinkName">Andhra Pradesh</span><svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+            <a class="btn btn--red btn--sm" href="#quote"><span class="btn__label">Get a Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map" data-reveal="scale" style="--d:.1s">
+      <p class="map__note"><b>PAN India</b>Local · Domestic · Interstate</p>
+      <svg id="coverageMap" viewBox="0 0 800 740" role="img" aria-label="Map of the cities served in Andhra Pradesh, Telangana and Karnataka, with routes from Guntakal"></svg>
+      <div class="map__legend"><span><i class="r"></i>Guntakal office</span><span><i></i>Cities served</span><span><i class="l"></i>Relocation routes</span></div>
+    </div>
+  </div>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__row" id="tickerA"></div>
+    <div class="ticker__row ticker__row--rev" id="tickerB"></div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     CUSTOMER SUPPORT — animated clock
+     (24/7 availability is not claimed here until the company confirms it)
+     ====================================================================== -->
+<section class="sec support lift dark" id="support" aria-labelledby="support-title">
+  <div class="container support__grid">
+    <div>
+      <p class="eyebrow">Customer support</p>
+      <h2 class="h-section" id="support-title" data-split data-reveal="words">Moving Support <em>When You Need It.</em></h2>
+      <p class="lead" data-reveal="rise">We're always ready to assist you. Whether it's a local shift or a long-distance relocation, our team is here to help you every step of the way — from your first question to the final box.</p>
+      <div class="support__calls" data-reveal="rise" style="--d:.12s">
+        <a class="callcard" href="tel:+918712321238" data-magnetic>
+          <span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <span><small>Call our team</small><strong>+91 87123 21238</strong></span>
+          <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="callcard" href="tel:+919494344193">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <span><small>Alternate number</small><strong>+91 94943 44193</strong></span>
+          <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="callcard" href="https://wa.me/918712321238" target="_blank" rel="noopener">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></span>
+          <span><small>Message us</small><strong>WhatsApp</strong></span>
+          <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="clock" data-reveal="scale" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <defs>
+          <path id="orbitPath" d="M200,200 m-134,0 a134,134 0 1,1 268,0 a134,134 0 1,1 -268,0"/>
+        </defs>
+        <circle cx="200" cy="200" r="196" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="1"/>
+        <circle cx="200" cy="200" r="186" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="1.5 17.98" opacity=".55" transform="rotate(-90 200 200)"/>
+        <circle cx="200" cy="200" r="186" fill="none" stroke="#fff" stroke-width="16" stroke-dasharray="3 94.4" transform="rotate(-90.5 200 200)"/>
+        <g class="ring-rot"><circle cx="200" cy="200" r="164" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5" stroke-dasharray="80 24 6 24"/></g>
+        <g class="ring-rot rev"><circle cx="200" cy="200" r="150" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1" stroke-dasharray="2 6"/></g>
+        <g class="ring-rot fast"><circle cx="200" cy="200" r="150" fill="none" stroke="#161e2d" stroke-width="3" stroke-linecap="round" stroke-dasharray="70 872.5"/><circle cx="350" cy="200" r="6" fill="#161e2d"/></g>
+        <text class="lbl"><textPath href="#orbitPath" startOffset="2%">Book · · ·</textPath></text>
+        <text class="lbl"><textPath href="#orbitPath" startOffset="27%">Pack · · ·</textPath></text>
+        <text class="lbl"><textPath href="#orbitPath" startOffset="52%">Move · · ·</textPath></text>
+        <text class="lbl"><textPath href="#orbitPath" startOffset="77%">Unpack · · ·</textPath></text>
+        <circle cx="200" cy="200" r="118" fill="rgba(22,30,45,.18)"/>
+        <circle cx="200" cy="200" r="118" fill="none" stroke="rgba(255,255,255,.35)"/>
+        <text class="digital" id="clockDigital" x="200" y="268" text-anchor="middle">--:--</text>
+        <text class="tz" x="200" y="288" text-anchor="middle">IST · Guntakal</text>
+        <g class="hand" id="handH"><line x1="200" y1="212" x2="200" y2="140" stroke="#fff" stroke-width="7" stroke-linecap="round"/></g>
+        <g class="hand" id="handM"><line x1="200" y1="216" x2="200" y2="104" stroke="#fff" stroke-width="4" stroke-linecap="round"/></g>
+        <g class="hand sec" id="handS"><line x1="200" y1="226" x2="200" y2="92" stroke="#161e2d" stroke-width="2" stroke-linecap="round"/><circle cx="200" cy="92" r="4" fill="#161e2d"/></g>
+        <circle cx="200" cy="200" r="9" fill="#161e2d"/><circle cx="200" cy="200" r="3.5" fill="#fff"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     HOW IT WORKS — the four-step journey
+     ====================================================================== -->
+<section class="process lift" id="process" aria-labelledby="process-title">
+  <div class="process__sticky">
+    <div class="process__track" id="processTrack">
+      <svg class="process__road" id="processRoad" aria-hidden="true"><path class="base"/><path class="fill"/></svg>
+      <div class="process__truck" id="processTruck" aria-hidden="true"><svg viewBox="0 0 32 22"><use href="#i-truck"/></svg></div>
+
+      <div class="process__intro">
+        <p class="eyebrow">Check out our shifting process</p>
+        <h2 class="h-section" id="process-title" data-split data-reveal="words">Four Steps. <em>One Seamless Move.</em></h2>
+        <p class="lead" data-reveal="rise">From the moment you book to the moment you settle in, every stage of your relocation is handled by one experienced team.</p>
+        <p class="process__hint" aria-hidden="true">Follow the journey <svg viewBox="0 0 34 14"><path d="M0 7h32M26 1l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2"/></svg></p>
+      </div>
+
+      <article class="step step--1" data-step="1">
+        <div class="step__media"><img src="assets/site/slider-1.webp" width="1520" height="829" alt="Movers with cardboard boxes beside a moving van" loading="lazy" decoding="async" style="object-position:20% 50%"></div>
+        <div class="step__medal" data-medal><img src="assets/site/step1.png" width="200" height="200" alt="" loading="lazy"></div>
+        <span class="step__num" aria-hidden="true">01</span>
+        <div class="step__text"><p class="step__kicker">Step 01</p><h3>Book Our Service</h3><p>Choose Mahendra Packers and Movers for a safe and seamless relocation experience.</p></div>
+      </article>
+
+      <article class="step step--2" data-step="2">
+        <div class="step__media"><img src="assets/img/gallery-9.webp" width="900" height="1600" alt="Household goods packed in boxes and wrapping" loading="lazy" decoding="async"></div>
+        <div class="step__medal" data-medal><img src="assets/site/step3.png" width="200" height="200" alt="" loading="lazy"></div>
+        <span class="step__num" aria-hidden="true">02</span>
+        <div class="step__text"><p class="step__kicker">Step 02</p><h3>Packing &amp; Loading</h3><p>Our professional team carefully packs your belongings using quality packing materials and handles the loading.</p></div>
+      </article>
+
+      <article class="step step--3" data-step="3">
+        <div class="step__media"><img src="assets/img/gallery-container.webp" width="1600" height="900" alt="Packed goods loaded securely inside a transport container" loading="lazy" decoding="async"></div>
+        <div class="step__medal" data-medal><img src="assets/site/step2.png" width="200" height="200" alt="" loading="lazy"></div>
+        <span class="step__num" aria-hidden="true">03</span>
+        <div class="step__text"><p class="step__kicker">Step 03</p><h3>Safe Transportation</h3><p>Our transportation fleet handles the journey with a focus on safety and timely delivery.</p></div>
+      </article>
+
+      <article class="step step--4" data-step="4">
+        <div class="step__media"><img src="assets/site/form-img.png" width="400" height="400" alt="Couple unloading boxes from a moving van at their new home" loading="lazy" decoding="async"></div>
+        <div class="step__medal" data-medal><img src="assets/site/step41.png" width="200" height="200" alt="" loading="lazy"></div>
+        <span class="step__num" aria-hidden="true">04</span>
+        <div class="step__text"><p class="step__kicker">Step 04</p><h3>Unloading &amp; Setup</h3><p>Your belongings are unloaded, unpacked and arranged at your new destination.</p></div>
+      </article>
+
+      <div class="process__end">
+        <p class="eyebrow">Your move, sorted</p>
+        <h3>Ready to take the first step?</h3>
+        <p>Share your moving details and we'll prepare a personalised quotation.</p>
+        <a class="btn btn--red" href="#quote" data-magnetic><span class="btn__label">Book Our Service</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+    <div class="process__hud" aria-hidden="true">
+      <span>Step <b id="processNum">01</b> / 04</span>
+      <span class="bars"><i></i><i></i><i></i><i></i></span>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     PRICING — quote-based, no published rates
+     ====================================================================== -->
+<section class="sec pricing lift" id="pricing" aria-labelledby="pricing-title">
+  <div class="container pricing__grid">
+    <div>
+      <p class="eyebrow">Pricing</p>
+      <h2 class="h-section" id="pricing-title" data-split data-reveal="words">Transparent Pricing. <em>No Unwanted Surprises.</em></h2>
+      <p class="lead" data-reveal="rise">Every move is different, so we don't use one-size-fits-all rate cards. We prepare a personalised quotation based on your requirements — and the final bill is clear, easy to understand and free from hidden charges.</p>
+      <ul class="pillars">
+        <li class="pillar" data-reveal="rise"><span class="pillar__n">01</span><div><h3>A clear, easy-to-understand bill</h3><p>The final bill is free from hidden charges. You pay the amount that is shown on the bill.</p></div></li>
+        <li class="pillar" data-reveal="rise" style="--d:.08s"><span class="pillar__n">02</span><div><h3>No hidden costs</h3><p>Competitive pricing with a clear cost breakdown — you pay only for what you need.</p></div></li>
+        <li class="pillar" data-reveal="rise" style="--d:.16s"><span class="pillar__n">03</span><div><h3>Services that fit your budget</h3><p>Whether it's a home, office or vehicle relocation, we offer personalised services that fit your budget.</p></div></li>
+      </ul>
+      <a class="btn btn--red" href="#quote" data-magnetic data-reveal="rise"><span class="btn__label">Get Your Free Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="pricing__visual">
+      <span class="orb orb--1" aria-hidden="true"></span>
+      <span class="orb orb--2" aria-hidden="true"></span>
+      <div class="seal" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 100 100"><defs><path id="sealCircle" d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/></defs><text data-fit-ring><textPath href="#sealCircle">Transparent · No hidden charges · </textPath></text></svg>
+        <b>₹</b>
+      </div>
+      <div class="qcard" data-tilt data-reveal="tilt">
+        <div class="qcard__inner" data-tilt-inner>
+          <div class="qcard__head">
+            <img src="assets/site/logo.png" width="200" height="100" alt="" loading="lazy">
+            <div><strong>Your Moving Quotation</strong><span>Personalised · Free · No obligation</span></div>
+          </div>
+          <ul class="qcard__rows" aria-label="What your quotation is based on">
+            <li style="--i:0"><span>Route</span><b>Moving from → to</b></li>
+            <li style="--i:1"><span>Inventory</span><b>1 BHK – Villa · Office</b></li>
+            <li style="--i:2"><span>Packing</span><b>Full · Partial · None</b></li>
+            <li style="--i:3"><span>Transport</span><b>Truck · Container · Air · Train</b></li>
+            <li style="--i:4"><span>Moving date</span><b>Your schedule</b></li>
+            <li style="--i:5"><span>Hidden charges</span><b class="ok"><svg aria-hidden="true"><use href="#i-check"/></svg>None</b></li>
+          </ul>
+          <div class="qcard__total"><span>Your price</span><strong>Personalised quote</strong></div>
+          <a class="btn btn--ink btn--block" href="#quote"><span class="btn__label">Request My Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     REVIEWS — original testimonials from the reference website
+     ====================================================================== -->
+<section class="sec reviews lift dark" id="reviews" aria-labelledby="reviews-title" data-expand>
+  <div class="container">
+    <header class="sec-head sec-head--split">
+      <div>
+        <p class="eyebrow eyebrow--light">What our clients say</p>
+        <h2 class="h-section" id="reviews-title" data-split data-reveal="words">Trusted Moves. <em>Real Experiences.</em></h2>
+      </div>
+      <p class="sec-head__aside" data-reveal="rise">Mahendra Packers and Movers delivers reliable, stress-free relocation experiences across India. Here's what our customers say.</p>
+    </header>
+
+    <div class="carousel" id="reviewsCarousel" aria-roledescription="carousel" aria-label="Customer reviews" data-reveal="rise">
+      <div class="carousel__stage" id="carouselStage" aria-live="polite">
+        <figure class="review" role="group" aria-roledescription="slide" aria-label="1 of 4">
+          <span class="review__q" aria-hidden="true">“</span>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>“The team at Mahendra Packers and Movers handled our entire house shifting process so smoothly. Everything arrived on time and without a single scratch. Highly professional and efficient!”</blockquote>
+          <figcaption><img src="assets/site/avatar/avt-7.jpg" width="60" height="60" alt="" loading="lazy"><div><strong>Ravi Sharma</strong><span>Software Engineer</span></div></figcaption>
+        </figure>
+        <figure class="review" role="group" aria-roledescription="slide" aria-label="2 of 4">
+          <span class="review__q" aria-hidden="true">“</span>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>“From packing to unpacking, everything was done with great care and professionalism. Mahendra Packers made our office relocation completely hassle-free and smooth. Strongly recommended for corporate shifting.”</blockquote>
+          <figcaption><img src="assets/site/avatar/avt-5.jpg" width="80" height="80" alt="" loading="lazy"><div><strong>Anita Desai</strong><span>HR Manager</span></div></figcaption>
+        </figure>
+        <figure class="review" role="group" aria-roledescription="slide" aria-label="3 of 4">
+          <span class="review__q" aria-hidden="true">“</span>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>“I was worried about moving my fragile items, but Mahendra's team packed everything so well. Not a single item was damaged. Great job!”</blockquote>
+          <figcaption><img src="assets/site/avatar/avt-8.jpg" width="60" height="60" alt="" loading="lazy"><div><strong>Meena Reddy</strong><span>Homemaker</span></div></figcaption>
+        </figure>
+        <figure class="review" role="group" aria-roledescription="slide" aria-label="4 of 4">
+          <span class="review__q" aria-hidden="true">“</span>
+          <div class="stars" role="img" aria-label="Rated 5 out of 5"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>“They arrived on time, packed everything quickly, and delivered my goods ahead of schedule. Mahendra Packers and Movers are reliable and affordable.”</blockquote>
+          <figcaption><img src="assets/site/avatar/avt-6.jpg" width="60" height="60" alt="" loading="lazy"><div><strong>Sandeep Kumar</strong><span>Business Owner</span></div></figcaption>
+        </figure>
+      </div>
+      <div class="carousel__controls">
+        <button class="carousel__btn" type="button" data-dir="-1" aria-label="Previous review"><svg aria-hidden="true"><use href="#i-arrow-l"/></svg></button>
+        <div class="carousel__dots" id="carouselDots"></div>
+        <button class="carousel__btn" type="button" data-dir="1" aria-label="Next review"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+    <div class="reviews__links">
+      <a class="link-arrow" href="https://mahendrapackersandmovers.com/reviews" target="_blank" rel="noopener">Read more reviews<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+      <a class="link-arrow" href="https://mahendrapackersandmovers.com/review" target="_blank" rel="noopener">Write a review<svg aria-hidden="true"><use href="#i-arrow-ur"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     FAQ — answers grounded in the company's published information
+     ====================================================================== -->
+<section class="sec faq lift" id="faq" aria-labelledby="faq-title">
+  <div class="container faq__grid">
+    <div class="faq__aside">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h-section" id="faq-title" data-split data-reveal="words">Everything You Need to Know <em>Before Moving.</em></h2>
+      <p class="lead" data-reveal="rise">Quick answers about our services and coverage. For anything specific to your move, our team is happy to help.</p>
+      <div class="faq__help" data-reveal="rise" style="--d:.1s">
+        <strong>Still have a question?</strong>
+        <p>Talk to us directly — we'll guide you through your move.</p>
+        <div class="row">
+          <a class="btn btn--red btn--sm" href="tel:+918712321238"><svg aria-hidden="true"><use href="#i-phone"/></svg><span class="btn__label">Call Us</span></a>
+          <a class="btn btn--outline btn--sm" href="https://wa.me/918712321238" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span class="btn__label">WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc" id="faqList">
+      <div class="acc__item" data-reveal="rise">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-b1"><span class="n">01</span><span class="t">What relocation services does Mahendra Packers and Movers provide?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-1" role="region" aria-labelledby="faq-b1"><div><p>We provide home relocation, office relocation, car relocation, courier and cargo, luggage delivery and goods insurance support — for local, domestic and interstate moves.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.04s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-b2"><span class="n">02</span><span class="t">Do you provide home and office relocation?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-2" role="region" aria-labelledby="faq-b2"><div><p>Yes. For homes, we handle household shifting with expert packing, secure loading and timely delivery. For businesses, we relocate offices with minimal disruption and maximum safety of assets and equipment.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.08s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-b3"><span class="n">03</span><span class="t">Do you offer car and bike transportation?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-3" role="region" aria-labelledby="faq-b3"><div><p>Yes. We offer safe, door-to-door car and bike transportation, using specialised vehicle carriers and expert handling across cities and states.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.12s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-b4"><span class="n">04</span><span class="t">Do you provide courier and luggage delivery?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-4" role="region" aria-labelledby="faq-b4"><div><p>Yes. Our courier and cargo service delivers goods across local and national routes, and our luggage delivery service offers door-to-door pickup and delivery — ideal for students and travellers.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.16s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-b5"><span class="n">05</span><span class="t">Is goods insurance available?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-5" role="region" aria-labelledby="faq-b5"><div><p>Yes, we offer goods insurance support to help protect your belongings during transit. For coverage terms and conditions, please <a href="tel:+918712321238">call us</a> or <a href="mailto:mahendrapackersandmovers@gmail.com">email us</a> and our team will explain the options for your move.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.2s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-6" id="faq-b6"><span class="n">06</span><span class="t">Which cities and states do you cover?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-6" role="region" aria-labelledby="faq-b6"><div><p>We offer PAN-India relocation services. Our listed service areas include Andhra Pradesh, Telangana and Karnataka, with leading cities such as Anantapur, Kurnool, Ballari, Hyderabad, Visakhapatnam, Guntur, Nellore and more — see the <a href="#coverage">coverage section</a>. If your city isn't listed, contact us to confirm availability.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.24s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-7" id="faq-b7"><span class="n">07</span><span class="t">How can I request a moving quotation?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-7" role="region" aria-labelledby="faq-b7"><div><p>Fill in the <a href="#quote">free quote form</a> on this page, message us on <a href="https://wa.me/918712321238" target="_blank" rel="noopener">WhatsApp</a>, or call +91 87123 21238 / +91 94943 44193. We'll prepare a personalised quotation based on your requirements.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.28s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-8" id="faq-b8"><span class="n">08</span><span class="t">Do you offer storage facilities?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-8" role="region" aria-labelledby="faq-b8"><div><p>Yes. We have warehouse facilities for short-term and long-term storage, so you can store your goods before setting up your new home. Please contact us for availability and details for your move.</p></div></div>
+      </div>
+      <div class="acc__item" data-reveal="rise" style="--d:.32s">
+        <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq-9" id="faq-b9"><span class="n">09</span><span class="t">What packing materials do you use?</span><span class="x" aria-hidden="true"></span></button></h3>
+        <div class="acc__panel" id="faq-9" role="region" aria-labelledby="faq-b9"><div><p>We use high-quality materials including bubble wrap, corrugated boxes, foam, stretch film and tape to protect your belongings throughout the move.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     CONTACT / GET A FREE QUOTE
+     ====================================================================== -->
+<section class="sec contact lift dark" id="contact" aria-labelledby="contact-title" data-expand>
+  <div class="container contact__grid">
+    <div>
+      <p class="eyebrow">Get a free quote</p>
+      <h2 class="h-xl" id="contact-title" data-split data-reveal="words">Ready for a <em>Stress-Free</em> Move?</h2>
+      <p class="lead" data-reveal="rise">Tell us where you're moving from and where you're headed. Let Mahendra Packers and Movers take care of the rest.</p>
+      <div class="cinfo" data-reveal="rise" style="--d:.1s">
+        <a href="tel:+918712321238"><span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span><small>Phone 1</small><strong>+91 87123 21238</strong></span></a>
+        <a href="tel:+919494344193"><span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span><span><small>Phone 2</small><strong>+91 94943 44193</strong></span></a>
+        <a href="mailto:mahendrapackersandmovers@gmail.com"><span class="ico"><svg aria-hidden="true"><use href="#i-mail"/></svg></span><span><small>Email</small><strong>mahendrapackersandmovers@gmail.com</strong></span></a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=15%2F29%2C%20Gandhi%20Chowk%2C%20Guntakal%20515801" target="_blank" rel="noopener"><span class="ico"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><span><small>Address</small><strong>15/29, Gandhi Chowk, Guntakal 515801, India</strong></span></a>
+        <a href="https://wa.me/918712321238" target="_blank" rel="noopener"><span class="ico"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></span><span><small>WhatsApp</small><strong>Chat with us</strong></span></a>
+      </div>
+    </div>
+
+    <form class="qform" id="quote" novalidate data-reveal="clip-up" style="--d:.1s" aria-labelledby="qform-title">
+      <div class="qform__head">
+        <div><h3 id="qform-title">Shifting enquiry</h3><p>Fields marked <b style="color:var(--red)">*</b> are required.</p></div>
+        <span class="tag">Free · No obligation</span>
+      </div>
+      <div class="fgrid">
+        <div class="field"><input id="f-name" name="name" type="text" autocomplete="name" placeholder=" " required minlength="2" aria-describedby="e-name"><label for="f-name">Full Name <b>*</b></label><span class="err" id="e-name">Please enter your full name.</span></div>
+        <div class="field"><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder=" " required aria-describedby="e-phone"><label for="f-phone">Phone Number <b>*</b></label><span class="err" id="e-phone">Please enter a valid 10-digit mobile number.</span></div>
+        <div class="field full"><input id="f-email" name="email" type="email" autocomplete="email" placeholder=" " aria-describedby="e-email"><label for="f-email">Email Address</label><span class="err" id="e-email">Please enter a valid email address.</span></div>
+        <div class="full route-field" id="routeField">
+          <div class="field"><input id="f-from" name="mfrom" type="text" placeholder=" " required aria-describedby="e-from"><label for="f-from">Moving From <b>*</b></label><span class="err" id="e-from">Where are you moving from?</span></div>
+          <div class="route-viz" aria-hidden="true"><svg viewBox="0 0 64 58" preserveAspectRatio="none"><path class="ln" d="M4 29 H60"/><path class="ln-on" d="M4 29 H60"/></svg><span class="truck"><svg viewBox="0 0 32 22"><use href="#i-truck"/></svg></span></div>
+          <div class="field"><input id="f-to" name="mto" type="text" placeholder=" " required aria-describedby="e-to"><label for="f-to">Moving To <b>*</b></label><span class="err" id="e-to">Where are you moving to?</span></div>
+        </div>
+        <div class="field is-static"><select id="f-type" name="category" required aria-describedby="e-type">
+            <option value="" selected disabled>Select move type</option>
+            <option value="household">Home Relocation</option>
+            <option value="office">Office Relocation</option>
+            <option value="vehicle">Car Transport</option>
+            <option value="courier">Courier &amp; Cargo</option>
+            <option value="luggage">Luggage Delivery</option>
+            <option value="good">Goods Insurance</option>
+            <option value="other">Other</option>
+          </select><label for="f-type">Move Type <b>*</b></label><span class="err" id="e-type">Please choose a move type.</span></div>
+        <div class="field is-static"><input id="f-date" name="date" type="date" aria-describedby="e-date"><label for="f-date">Moving Date</label><span class="err" id="e-date">Please choose a date from today onwards.</span></div>
+        <div class="field is-static"><select id="f-inv" name="inventory_type">
+            <option value="" selected>Select inventory type</option>
+            <option value="1bhk">1 BHK</option><option value="2bhk">2 BHK</option><option value="3bhk">3 BHK</option><option value="4bhk">4 BHK</option>
+            <option value="villa">Villa / Bungalow</option><option value="office">Office</option>
+          </select><label for="f-inv">Inventory Type</label></div>
+        <div class="field is-static"><select id="f-pack" name="packing_services">
+            <option value="" selected>Select packing service</option>
+            <option value="full">Full Packing</option><option value="partial">Partial Packing</option><option value="none">No Packing Needed</option>
+          </select><label for="f-pack">Packing Services</label></div>
+        <div class="field is-static full"><select id="f-mode" name="transport_mode">
+            <option value="" selected>Select transport mode</option>
+            <option value="truck">Truck</option><option value="container">Container</option><option value="air">Air Cargo</option><option value="train">Train</option>
+          </select><label for="f-mode">Transport Mode</label></div>
+        <div class="field full"><textarea id="f-msg" name="msg" placeholder=" " rows="3" maxlength="1500"></textarea><label for="f-msg">Special Instructions (fragile items, floor, lift access…)</label></div>
+      </div>
+      <div class="qform__submit">
+        <small>We'll use these details only to prepare your quotation and contact you about your move.</small>
+        <button class="btn btn--red" type="submit" data-magnetic><span class="spinner" aria-hidden="true"></span><span class="btn__label">Get My Free Quote</span><svg class="i-arr" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+      <div class="qstatus" id="qstatus" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================================================================
+     FOOTER
+     ====================================================================== -->
+<footer class="footer" aria-labelledby="footer-title">
+  <h2 class="sr-only" id="footer-title">Mahendra Packers and Movers</h2>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="#home" aria-label="Back to top"><img src="assets/site/logo.png" width="200" height="100" alt="Mahendra Packers and Movers" loading="lazy"></a>
+        <p>Mahendra Packers and Movers specialises in top-quality relocation services for homes, offices and businesses. Contact us today for a hassle-free move.</p>
+        <div class="footer__social"><a href="https://wa.me/918712321238" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a></div>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="footer__links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+          <li><a href="#process">How It Works</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://mahendrapackersandmovers.com/gallery" target="_blank" rel="noopener">Gallery</a></li>
+          <li><a href="https://mahendrapackersandmovers.com/aware" target="_blank" rel="noopener">Beware of Fakes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer__links">
+          <li><a href="#svc-home">Home Relocation</a></li>
+          <li><a href="#svc-office">Office Relocation</a></li>
+          <li><a href="#svc-car">Car Relocation</a></li>
+          <li><a href="#svc-cargo">Courier &amp; Cargo</a></li>
+          <li><a href="#svc-luggage">Luggage Delivery</a></li>
+          <li><a href="#svc-insurance">Goods Insurance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Coverage</h4>
+        <ul class="footer__links">
+          <li><a href="#coverage" data-goto-state="ap">Andhra Pradesh</a></li>
+          <li><a href="#coverage" data-goto-state="ts">Telangana</a></li>
+          <li><a href="#coverage" data-goto-state="ka">Karnataka</a></li>
+          <li>PAN-India relocation</li>
+        </ul>
+      </div>
+      <div class="footer__contact-col">
+        <h4>Contact</h4>
+        <ul class="footer__contact">
+          <li><svg aria-hidden="true"><use href="#i-phone"/></svg><span><a href="tel:+918712321238">+91 87123 21238</a><br><a href="tel:+919494344193">+91 94943 44193</a></span></li>
+          <li><svg aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:mahendrapackersandmovers@gmail.com" style="word-break:break-all">mahendrapackersandmovers@gmail.com</a></li>
+          <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>15/29, Gandhi Chowk, Guntakal 515801, India</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__mark" aria-hidden="true">Mahendra</p>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Mahendra Packers and Movers. All rights reserved.</span>
+      <a href="#home">Back to the start of the journey ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating actions -->
+<a class="fab-call" id="fabCall" href="tel:+918712321238"><span class="ico"><svg aria-hidden="true"><use href="#i-phone"/></svg></span>Call Now</a>
+<button class="totop" id="toTop" type="button" aria-label="Back to top" data-magnetic>
+  <svg class="ring" viewBox="0 0 58 58" aria-hidden="true"><circle class="bg" cx="29" cy="29" r="25"/><circle class="fg" id="toTopRing" cx="29" cy="29" r="25"/></svg>
+  <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow-up"/></svg><svg><use href="#i-arrow-up"/></svg></span>
+</button>
+
+<script>
+/* ==========================================================================
+   MAHENDRA PACKERS AND MOVERS — interactions (vanilla JS, no dependencies)
+   ========================================================================== */
+(() => {
+'use strict';
+
+/* --------------------------------------------------------------------------
+   0. CONFIG
+   -------------------------------------------------------------------------- */
+// Frame manifest, generated from the files in assets/frames/lg (sorted numerically).
+// assets/frames/sm holds the same filenames at 1280px for phones/tablets.
+// Regenerate this list if the frames in the assets folder ever change.
+const FRAME_FILES = /*@frames*/[
+  "frame_001.webp","frame_002.webp","frame_003.webp","frame_004.webp","frame_005.webp","frame_006.webp","frame_007.webp","frame_008.webp",
+  "frame_009.webp","frame_010.webp","frame_011.webp","frame_012.webp","frame_013.webp","frame_014.webp","frame_015.webp","frame_016.webp",
+  "frame_017.webp","frame_018.webp","frame_019.webp","frame_020.webp","frame_021.webp","frame_022.webp","frame_023.webp","frame_024.webp",
+  "frame_025.webp","frame_026.webp","frame_027.webp","frame_028.webp","frame_029.webp","frame_030.webp","frame_031.webp","frame_032.webp",
+  "frame_033.webp","frame_034.webp","frame_035.webp","frame_036.webp","frame_037.webp","frame_038.webp","frame_039.webp","frame_040.webp",
+  "frame_041.webp","frame_042.webp","frame_043.webp","frame_044.webp","frame_045.webp","frame_046.webp","frame_047.webp","frame_048.webp",
+  "frame_049.webp","frame_050.webp","frame_051.webp","frame_052.webp","frame_053.webp","frame_054.webp","frame_055.webp","frame_056.webp",
+  "frame_057.webp","frame_058.webp","frame_059.webp","frame_060.webp","frame_061.webp","frame_062.webp","frame_063.webp","frame_064.webp",
+  "frame_065.webp","frame_066.webp","frame_067.webp","frame_068.webp","frame_069.webp","frame_070.webp","frame_071.webp","frame_072.webp",
+  "frame_073.webp","frame_074.webp","frame_075.webp","frame_076.webp","frame_077.webp","frame_078.webp","frame_079.webp","frame_080.webp",
+  "frame_081.webp","frame_082.webp","frame_083.webp","frame_084.webp","frame_085.webp","frame_086.webp","frame_087.webp","frame_088.webp",
+  "frame_089.webp","frame_090.webp","frame_091.webp","frame_092.webp","frame_093.webp","frame_094.webp","frame_095.webp","frame_096.webp",
+  "frame_097.webp","frame_098.webp","frame_099.webp","frame_100.webp","frame_101.webp","frame_102.webp","frame_103.webp","frame_104.webp",
+  "frame_105.webp","frame_106.webp","frame_107.webp","frame_108.webp","frame_109.webp","frame_110.webp","frame_111.webp","frame_112.webp",
+  "frame_113.webp","frame_114.webp","frame_115.webp","frame_116.webp","frame_117.webp","frame_118.webp","frame_119.webp","frame_120.webp",
+  "frame_121.webp","frame_122.webp","frame_123.webp","frame_124.webp","frame_125.webp","frame_126.webp","frame_127.webp","frame_128.webp",
+  "frame_129.webp","frame_130.webp","frame_131.webp","frame_132.webp","frame_133.webp","frame_134.webp","frame_135.webp","frame_136.webp",
+  "frame_137.webp","frame_138.webp","frame_139.webp","frame_140.webp","frame_141.webp","frame_142.webp","frame_143.webp","frame_144.webp",
+  "frame_145.webp","frame_146.webp","frame_147.webp","frame_148.webp","frame_149.webp","frame_150.webp","frame_151.webp","frame_152.webp",
+  "frame_153.webp","frame_154.webp","frame_155.webp","frame_156.webp","frame_157.webp","frame_158.webp","frame_159.webp","frame_160.webp",
+  "frame_161.webp","frame_162.webp","frame_163.webp","frame_164.webp","frame_165.webp","frame_166.webp","frame_167.webp","frame_168.webp",
+  "frame_169.webp","frame_170.webp","frame_171.webp","frame_172.webp","frame_173.webp","frame_174.webp","frame_175.webp","frame_176.webp",
+  "frame_177.webp","frame_178.webp","frame_179.webp","frame_180.webp","frame_181.webp","frame_182.webp","frame_183.webp","frame_184.webp",
+  "frame_185.webp","frame_186.webp","frame_187.webp","frame_188.webp","frame_189.webp","frame_190.webp","frame_191.webp","frame_192.webp",
+  "frame_193.webp","frame_194.webp","frame_195.webp","frame_196.webp","frame_197.webp","frame_198.webp","frame_199.webp","frame_200.webp",
+  "frame_201.webp","frame_202.webp","frame_203.webp","frame_204.webp","frame_205.webp","frame_206.webp","frame_207.webp","frame_208.webp",
+  "frame_209.webp","frame_210.webp","frame_211.webp","frame_212.webp","frame_213.webp","frame_214.webp","frame_215.webp","frame_216.webp",
+  "frame_217.webp","frame_218.webp","frame_219.webp","frame_220.webp","frame_221.webp","frame_222.webp","frame_223.webp","frame_224.webp",
+  "frame_225.webp","frame_226.webp","frame_227.webp","frame_228.webp","frame_229.webp","frame_230.webp","frame_231.webp","frame_232.webp",
+  "frame_233.webp","frame_234.webp","frame_235.webp","frame_236.webp","frame_237.webp","frame_238.webp","frame_239.webp"
+]/*@end*/;
+const FRAME_PATH_LG = 'assets/frames/lg/';
+const FRAME_PATH_SM = 'assets/frames/sm/';
+const SMALL_MQ = '(max-width: 900px), (pointer: coarse) and (max-width: 1366px)';
+
+// Existing booking endpoint used by the original website's quote forms (replies "1" on success).
+const QUOTE_ENDPOINT = 'https://mahendrapackersandmovers.com/contacts/booking';
+const WHATSAPP_NUMBER = '918712321238';
+const PHONE_LINK = 'tel:+918712321238';
+const PHONE_DISPLAY = '+91 87123 21238';
+
+/* --------------------------------------------------------------------------
+   1. HELPERS
+   -------------------------------------------------------------------------- */
+const $ = (s, c = document) => c.querySelector(s);
+const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+const root = document.documentElement;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
+if (reduced) root.classList.add('rm');
+
+// Document offset that ignores CSS transforms (stable for scroll maths)
+const docTop = el => { let y = 0; while (el) { y += el.offsetTop; el = el.offsetParent; } return y; };
+
+// Wrap every word in a mask span; keeps inline elements such as <em> intact
+function splitWords(el, cls) {
+  const out = [];
+  const walk = node => {
+    Array.from(node.childNodes).forEach(ch => {
+      if (ch.nodeType === 3) {
+        const frag = document.createDocumentFragment();
+        ch.textContent.split(/(\s+)/).forEach(part => {
+          if (!part) return;
+          if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(' ')); return; }
+          const outer = document.createElement('span');
+          const inner = document.createElement('span');
+          outer.className = cls; inner.className = cls + '__i';
+          inner.textContent = part;
+          inner.style.setProperty('--i', out.length);
+          outer.appendChild(inner); frag.appendChild(outer); out.push(inner);
+        });
+        ch.replaceWith(frag);
+      } else if (ch.nodeType === 1 && ch.tagName !== 'BR') walk(ch);
+    });
+  };
+  walk(el);
+  return out;
+}
+
+// Rolling button labels: duplicate the text for the hover roll
+$$('.btn__label').forEach(l => {
+  const t = l.textContent.trim();
+  l.dataset.text = t;
+  l.textContent = '';
+  const s = document.createElement('span'); s.textContent = t; l.appendChild(s);
+});
+
+/* --------------------------------------------------------------------------
+   2. SCROLL ENGINE — one rAF-batched scroll handler, prioritised measuring
+   -------------------------------------------------------------------------- */
+const Engine = (() => {
+  const subs = [], measurers = [];
+  let ticking = false, vh = innerHeight;
+  const run = () => { ticking = false; const y = scrollY; for (const f of subs) f(y, vh); };
+  const request = () => { if (!ticking) { ticking = true; requestAnimationFrame(run); } };
+  const remeasure = () => { vh = innerHeight; for (const m of measurers) m.fn(vh); run(); };
+  addEventListener('scroll', request, { passive: true });
+  let t; addEventListener('resize', () => { clearTimeout(t); t = setTimeout(remeasure, 120); });
+  return {
+    on: fn => subs.push(fn),
+    measure: (fn, prio = 10) => { measurers.push({ fn, prio }); measurers.sort((a, b) => a.prio - b.prio); },
+    request, remeasure
+  };
+})();
+
+/* --------------------------------------------------------------------------
+   3. HERO — scroll-controlled canvas frame sequence
+   -------------------------------------------------------------------------- */
+const Hero = (() => {
+  const section = $('#home');
+  const sticky = $('.hero__sticky', section);
+  const stage = $('.hero__stage', section);
+  const canvas = $('#heroCanvas');
+  const ctx = canvas.getContext('2d', { alpha: false });
+  const intro = $('#heroIntro');
+  const introLines = $$('.hero__line', intro);
+  const introRest = [$('.hero__eyebrow', intro), $('.hero__lead', intro), $('.hero__ctas', intro)];
+  const cue = $('#heroCue');
+  const hud = $('#heroHud');
+  const rail = $('.hud__rail', hud);
+  const counter = $('#heroCounter');
+  const dim = $('.hero__dim', section);
+  const chapterBtns = $$('[data-chapter]', hud);
+
+  const INK = '#161e2d';
+  const CHAPTER_START = [0, .15, .57, .82];       // where each chapter begins (scroll progress)
+  const CHAPTER_JUMP = [.10, .34, .69, .95];      // where a chapter button scrolls to
+  const N = FRAME_FILES.length;
+  const saveData = !!(navigator.connection && navigator.connection.saveData);
+  const small = saveData || matchMedia(SMALL_MQ).matches;
+  const base = small ? FRAME_PATH_SM : FRAME_PATH_LG;
+  const frames = new Array(N);                    // decoded HTMLImageElements
+
+  let settled = 0, total = N, doneLoading = false;
+  let target = 0, current = 0, drawn = -1, raf = 0, lastT = 0, shownFrame = -1;
+  let W = 0, H = 0, portrait = false, rect = null, feather = null;
+  let F = 1, vh = 1, top = 0, chapter = 0, covered = false;
+
+  const phases = $$('.phase', section).map(el => ({
+    el,
+    words: splitWords($('[data-phase-title]', el), 'pw'),
+    line: $('.phase__eyebrow i', el),
+    sub: $('.phase__sub', el),
+    start: parseFloat(el.dataset.start),
+    end: parseFloat(el.dataset.end),
+    vis: false
+  }));
+
+  /* ---- loading: first frames now, then coarse-to-fine passes so any scroll
+          position always has a nearby decoded frame ---- */
+  function loadOrder() {
+    const seen = new Uint8Array(N), list = [];
+    const add = i => { if (i >= 0 && i < N && !seen[i]) { seen[i] = 1; list.push(i); } };
+    for (let i = 0; i < 6; i++) add(i);
+    [24, 12, 6, 3, 1].forEach(step => {
+      if (saveData && step === 1) return;           // data saver: every 3rd frame only
+      for (let i = 0; i < N; i += step) add(i);
+    });
+    add(N - 1);
+    return list;
+  }
+
+  function load(i) {
+    return new Promise(resolve => {
+      const img = new Image();
+      img.decoding = 'async';
+      img.src = base + FRAME_FILES[i];
+      const ok = () => {
+        frames[i] = img;
+        if (!rect) computeRect();
+        kick();
+        resolve();
+      };
+      if (img.decode) img.decode().then(ok, () => (img.complete && img.naturalWidth ? ok() : resolve()));
+      else { img.onload = ok; img.onerror = resolve; }
+    }).then(() => { settled++; updateCounter(true); });
+  }
+
+  function startLoading() {
+    const list = loadOrder();
+    total = list.length;
+    const head = list.slice(0, 6);
+    let next = head.length, active = 0;
+    const max = small ? 4 : 6;
+    const pump = () => {
+      while (active < max && next < list.length) {
+        active++;
+        load(list[next++]).then(() => { active--; pump(); });
+      }
+    };
+    Promise.all(head.map(load)).then(() => {
+      if (document.readyState === 'complete') pump();
+      else addEventListener('load', pump, { once: true });
+    });
+  }
+
+  /* ---- drawing ---- */
+  function computeRect() {
+    const img = frames.find(Boolean);
+    const iw = img ? img.naturalWidth : 1920, ih = img ? img.naturalHeight : 1080;
+    const ar = iw / ih;
+    let w, h;
+    if (portrait) {                                   // letterboxed "cinema" frame on tall screens
+      h = H * 0.52; w = h * ar;
+      if (w < W) { w = W; h = w / ar; }
+    } else {                                          // cover
+      const s = Math.max(W / iw, H / ih); w = iw * s; h = ih * s;
+    }
+    const x = (W - w) / 2;
+    const y = portrait ? H * 0.6 - h / 2 : (H - h) / 2;
+    rect = { x, y, w, h };
+    if (portrait) {
+      const fh = Math.min(h * 0.24, H * 0.12);
+      const g1 = ctx.createLinearGradient(0, y, 0, y + fh);
+      g1.addColorStop(0, INK); g1.addColorStop(1, 'rgba(22,30,45,0)');
+      const g2 = ctx.createLinearGradient(0, y + h - fh, 0, y + h);
+      g2.addColorStop(0, 'rgba(22,30,45,0)'); g2.addColorStop(1, INK);
+      feather = { g1, g2, fh };
+    } else feather = null;
+  }
+
+  function paint(img) {
+    if (portrait) { ctx.fillStyle = INK; ctx.fillRect(0, 0, W, H); }
+    ctx.drawImage(img, rect.x, rect.y, rect.w, rect.h);
+    if (feather) {
+      ctx.fillStyle = feather.g1; ctx.fillRect(0, rect.y - 1, W, feather.fh + 1);
+      ctx.fillStyle = feather.g2; ctx.fillRect(0, rect.y + rect.h - feather.fh, W, feather.fh + 1);
+    }
+  }
+
+  // Nearest decoded frame: never shows a blank canvas while frames stream in
+  function nearest(i) {
+    if (frames[i]) return i;
+    for (let d = 1; d < N; d++) {
+      if (i - d >= 0 && frames[i - d]) return i - d;
+      if (i + d < N && frames[i + d]) return i + d;
+    }
+    return -1;
+  }
+
+  function kick() { if (!raf) raf = requestAnimationFrame(render); }
+
+  function render(force) {
+    raf = 0;
+    if (!rect) return;
+    const now = performance.now();
+    const dt = lastT ? Math.min(64, now - lastT) : 16.7;
+    lastT = now;
+    const diff = target - current;
+    if (reduced || Math.abs(diff) < 0.04) current = target;
+    else current += diff * (1 - Math.pow(0.76, dt / 16.7));   // light easing between scroll ticks
+    const want = Math.round(current);
+    const k = nearest(want);
+    if (k >= 0 && (k !== drawn || force === true)) { paint(frames[k]); drawn = k; }
+    if (want !== shownFrame) { shownFrame = want; updateCounter(); }
+    if (current !== target) raf = requestAnimationFrame(render);
+    else lastT = 0;
+  }
+
+  function updateCounter(fromLoad) {
+    if (!doneLoading) {
+      if (settled >= total) doneLoading = true;
+      else if (fromLoad) { counter.textContent = `Loading journey ${Math.round(settled / total * 100)}%`; return; }
+      else return;
+    }
+    counter.textContent = `Frame ${String(shownFrame + 1).padStart(3, '0')} / ${N}`;
+  }
+
+  /* ---- layout ---- */
+  function measure() {
+    const w = sticky.clientWidth, h = sticky.clientHeight;
+    vh = h;
+    top = docTop(section);
+    F = Math.max(1, section.offsetHeight - 2 * h);
+    const dpr = Math.min(window.devicePixelRatio || 1, small ? 1.75 : 2);
+    const nw = Math.round(w * dpr), nh = Math.round(h * dpr);
+    if (nw !== W || nh !== H) {
+      W = canvas.width = nw; H = canvas.height = nh;
+      ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+      portrait = w / h < 0.95;
+      if (frames.some(Boolean)) { computeRect(); render(true); }
+      else rect = null;
+    }
+  }
+
+  /* ---- scroll-linked overlays ---- */
+  function update(y) {
+    if (reduced) return;
+    const p = clamp((y - top) / F);
+    const exit = clamp((y - top - F) / vh);
+    const isCovered = exit >= 1;
+    if (isCovered && covered) return;               // hero fully hidden behind the next section
+    covered = isCovered;
+
+    target = p * (N - 1);
+    kick();
+
+    // Intro headline lifts away in layers as the journey begins
+    const t = easeOut(clamp((p - 0.004) / 0.05));
+    intro.style.opacity = (1 - t).toFixed(3);
+    intro.style.visibility = t >= 1 ? 'hidden' : '';
+    introLines[0].style.transform = `translate3d(0,${(-t * 90).toFixed(1)}px,0)`;
+    introLines[1].style.transform = `translate3d(0,${(-t * 55).toFixed(1)}px,0)`;
+    introRest.forEach((el, i) => { el.style.transform = `translate3d(0,${(-t * (24 + i * 10)).toFixed(1)}px,0)`; });
+    cue.style.opacity = (1 - clamp(p / 0.02)).toFixed(3);
+
+    // Chapter headlines: word-by-word masks driven directly by scroll (fully reversible)
+    for (const ph of phases) {
+      const on = p >= ph.start - 0.004 && p <= ph.end + 0.004;
+      if (!on) { if (ph.vis) { ph.el.style.opacity = 0; ph.vis = false; } continue; }
+      ph.vis = true;
+      const inP = clamp((p - ph.start) / 0.045);
+      const outP = ph.end > 1 ? 0 : clamp((p - (ph.end - 0.03)) / 0.03);
+      ph.el.style.opacity = (Math.min(1, inP * 2.2) * (1 - outP)).toFixed(3);
+      ph.el.style.transform = `translate3d(0,${(outP * -40).toFixed(1)}px,0)`;
+      const n = ph.words.length, st = Math.min(0.12, 0.55 / n), span = 1 - (n - 1) * st;
+      ph.words.forEach((w, i) => {
+        const wi = easeOut(clamp((inP - i * st) / span));
+        w.style.transform = `translate3d(0,${((1 - wi) * 110).toFixed(1)}%,0) rotate(${((1 - wi) * 6).toFixed(2)}deg)`;
+      });
+      ph.line.style.transform = `scaleX(${easeOut(inP).toFixed(3)})`;
+      const s = clamp(inP * 1.4 - 0.35);
+      ph.sub.style.opacity = s.toFixed(3);
+      ph.sub.style.transform = `translate3d(0,${((1 - easeOut(s)) * 18).toFixed(1)}px,0)`;
+    }
+
+    // Journey rail + chapter state
+    rail.style.setProperty('--p', p.toFixed(4));
+    let ci = 0;
+    CHAPTER_START.forEach((s, i) => { if (p >= s) ci = i; });
+    if (ci !== chapter) {
+      chapter = ci;
+      chapterBtns.forEach((b, i) => { b.classList.toggle('is-active', i === ci); b.setAttribute('aria-pressed', i === ci); });
+    }
+
+    // Exit: the stage recedes as the next section slides over it
+    const e = easeOut(exit);
+    stage.style.transform = exit > 0 ? `scale(${(1 - e * 0.08).toFixed(4)})` : '';
+    stage.style.borderRadius = exit > 0 ? `${(e * 36).toFixed(1)}px` : '';
+    dim.style.opacity = (e * 0.55).toFixed(3);
+  }
+
+  chapterBtns.forEach((b, i) => b.addEventListener('click', () => {
+    scrollTo({ top: top + F * CHAPTER_JUMP[i], behavior: 'smooth' });
+  }));
+
+  Engine.measure(measure, 1);
+  Engine.on(update);
+
+  if (reduced) {
+    // Reduced motion: a single still frame, no scroll scrubbing, no bulk preloading
+    load(0).then(() => { computeRect(); render(true); });
+  } else {
+    startLoading();
+  }
+  return { get ready() { return !!rect; } };
+})();
+
+/* --------------------------------------------------------------------------
+   4. NAVIGATION — solid state, active-section indicator, fullscreen menu
+   -------------------------------------------------------------------------- */
+const Nav = (() => {
+  const nav = $('#nav');
+  const linksWrap = $('.nav__links', nav);
+  const links = $$('[data-nav]', nav);
+  const indicator = $('.nav__indicator', nav);
+  const burger = $('.nav__burger', nav);
+  const menu = $('#menu');
+  const ids = links.map(a => a.dataset.nav);
+  let tops = [], aboutTop = 0, navH = 78, active = '', solid = null;
+
+  function placeIndicator() {
+    const a = links.find(l => l.dataset.nav === active);
+    if (!a || !linksWrap.offsetParent) { indicator.classList.remove('is-on'); return; }
+    indicator.style.width = (a.offsetWidth - 26) + 'px';
+    indicator.style.transform = `translateX(${a.offsetLeft + 13}px)`;
+    indicator.classList.add('is-on');
+  }
+
+  Engine.measure(() => {
+    tops = ids.map(id => docTop(document.getElementById(id)));
+    aboutTop = docTop($('#about'));
+    navH = nav.offsetHeight;
+    placeIndicator();
+  }, 5);
+
+  Engine.on((y, vh) => {
+    const s = y >= aboutTop - navH;
+    if (s !== solid) { solid = s; nav.classList.toggle('is-solid', s); }
+    let cur = ids[0];
+    tops.forEach((t, i) => { if (y + vh * 0.35 >= t) cur = ids[i]; });
+    if (cur !== active) {
+      active = cur;
+      links.forEach(l => l.dataset.nav === cur ? l.setAttribute('aria-current', 'true') : l.removeAttribute('aria-current'));
+      placeIndicator();
+    }
+  });
+
+  function setMenu(open) {
+    root.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    if (open) {
+      const r = burger.getBoundingClientRect();
+      menu.style.setProperty('--ox', (r.left + r.width / 2) + 'px');
+      menu.style.setProperty('--oy', (r.top + r.height / 2) + 'px');
+      menu.inert = false;
+      setTimeout(() => { const f = $('a', menu); if (f) f.focus({ preventScroll: true }); }, 450);
+    } else {
+      menu.inert = true;
+    }
+  }
+  burger.addEventListener('click', () => setMenu(!root.classList.contains('menu-open')));
+  $$('a', menu).forEach(a => a.addEventListener('click', () => setMenu(false)));
+  addEventListener('keydown', e => {
+    if (e.key === 'Escape' && root.classList.contains('menu-open')) { setMenu(false); burger.focus(); }
+  });
+  addEventListener('resize', () => { if (innerWidth > 1120 && root.classList.contains('menu-open')) setMenu(false); });
+})();
+
+/* --------------------------------------------------------------------------
+   5. REVEALS — IntersectionObserver; elements re-arm when they leave below
+   -------------------------------------------------------------------------- */
+const Reveal = (() => {
+  $$('[data-split]').forEach(el => splitWords(el, 'sw'));
+  const els = $$('[data-reveal]');
+  if (reduced || !('IntersectionObserver' in window)) { els.forEach(e => e.classList.add('is-in')); return; }
+
+  // Clip-path reveals are tracked from cached positions: IntersectionObserver
+  // honours the element's own clip-path, so a fully clipped element never "intersects".
+  const clipEls = els.filter(el => el.dataset.reveal.startsWith('clip'));
+  let boxes = [];
+  Engine.measure(() => {
+    boxes = clipEls.map(el => ({ el, top: docTop(el), h: el.offsetHeight, on: el.classList.contains('is-in') }));
+  }, 40);
+  Engine.on((y, vh) => {
+    for (const b of boxes) {
+      const on = b.top < y + vh * 0.9 && b.top + b.h > y;
+      if (on && !b.on) { b.on = true; b.el.classList.add('is-in'); }
+      else if (!on && b.on && b.top > y + vh) { b.on = false; b.el.classList.remove('is-in'); }
+    }
+  });
+
+  const io = new IntersectionObserver(entries => {
+    for (const e of entries) {
+      if (e.isIntersecting) e.target.classList.add('is-in');
+      else if (e.boundingClientRect.top > 0) e.target.classList.remove('is-in');
+    }
+  }, { rootMargin: '0px 0px -10% 0px', threshold: 0 });
+  els.filter(el => !clipEls.includes(el)).forEach(el => io.observe(el));
+})();
+
+/* Large headline whose words light up as it scrolls through the viewport */
+const Scrub = (() => {
+  const items = $$('[data-scrub-words]').map(el => {
+    const words = splitWords(el, 'scw');
+    words.forEach(w => w.classList.add('sc'));
+    return { el, words, top: 0, h: 0 };
+  });
+  Engine.measure(() => items.forEach(it => { it.top = docTop(it.el); it.h = it.el.offsetHeight; }));
+  Engine.on((y, vh) => items.forEach(it => {
+    const p = reduced ? 1 : clamp((y + vh * 0.85 - it.top) / (vh * 0.42 + it.h));
+    const lit = Math.round(p * it.words.length);
+    it.words.forEach((w, i) => w.classList.toggle('lit', i < lit));
+  }));
+})();
+
+/* --------------------------------------------------------------------------
+   6. PARALLAX + DRIFT + SECTION EXPAND
+   -------------------------------------------------------------------------- */
+const Parallax = (() => {
+  if (reduced) return;
+  const items = $$('[data-parallax]').map(el => ({ el, s: parseFloat(el.dataset.parallax), c: 0 }));
+  const drifts = $$('[data-drift]').map(el => ({ el, s: parseFloat(el.dataset.drift), top: 0 }));
+  Engine.measure(() => {
+    items.forEach(it => {
+      it.el.style.transform = '';
+      const r = it.el.getBoundingClientRect();
+      it.c = r.top + scrollY + r.height / 2;
+    });
+    drifts.forEach(d => { d.top = docTop(d.el.parentElement); });
+  }, 20);
+  Engine.on((y, vh) => {
+    const mid = y + vh / 2;
+    for (const it of items) {
+      const d = it.c - mid;
+      if (Math.abs(d) > vh * 1.6) continue;
+      it.el.style.transform = `translate3d(0,${(d * it.s).toFixed(1)}px,0)`;
+    }
+    for (const d of drifts) {
+      const rel = y + vh - d.top;
+      if (rel < -vh || rel > vh * 3.5) continue;
+      d.el.style.transform = `translate3d(${(rel * d.s).toFixed(1)}px,0,0)`;
+    }
+  });
+})();
+
+/* Dark sections open up from an inset card to full width as they arrive */
+const Expand = (() => {
+  const items = $$('[data-expand]').map(el => ({ el, top: 0, last: '' }));
+  const mq = matchMedia('(min-width: 901px)');
+  Engine.measure(() => items.forEach(it => { it.top = docTop(it.el); }));
+  Engine.on((y, vh) => {
+    for (const it of items) {
+      let v = '';
+      if (!reduced && mq.matches) {
+        const p = clamp((y + vh - it.top) / (vh * 0.75));
+        if (p < 1) { const inset = ((1 - easeOut(p)) * 4.5).toFixed(2); v = `inset(0 ${inset}vw 0 ${inset}vw round var(--lift) var(--lift) 0 0)`; }
+      }
+      if (v !== it.last) { it.el.style.clipPath = v; it.last = v; }
+    }
+  });
+})();
+
+/* --------------------------------------------------------------------------
+   7. SERVICES — route index, card linking, quote preselect, 3D tilt
+   -------------------------------------------------------------------------- */
+const Services = (() => {
+  const section = $('#services');
+  const draw = $('#svcRouteDraw');
+  let top = 0, h = 1;
+  Engine.measure(() => { top = docTop(section); h = section.offsetHeight; });
+  Engine.on((y, vh) => {
+    const p = reduced ? 1 : clamp((y + vh * 0.85 - top) / (h * 0.55));
+    draw.style.strokeDashoffset = (1 - p).toFixed(4);
+  });
+
+  $$('[data-svc]').forEach(a => {
+    const card = $(`[data-svc-card="${a.dataset.svc}"]`);
+    if (!card) return;
+    card.addEventListener('pointerenter', () => a.classList.add('is-hot'));
+    card.addEventListener('pointerleave', () => a.classList.remove('is-hot'));
+  });
+
+  // Service CTAs preselect the move type in the quote form
+  $$('[data-service]').forEach(a => a.addEventListener('click', () => {
+    const sel = $('#f-type');
+    sel.value = a.dataset.service;
+    sel.dispatchEvent(new Event('change', { bubbles: true }));
+  }));
+})();
+
+const Tilt = (() => {
+  if (reduced || !finePointer) return;
+  $$('[data-tilt]').forEach(el => {
+    const inner = $('[data-tilt-inner]', el) || el;
+    const max = el.classList.contains('qcard') ? 16 : 7;
+    let raf = 0, ev = null;
+    el.addEventListener('pointermove', e => {
+      ev = e;
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        raf = 0;
+        const r = el.getBoundingClientRect();
+        const x = (ev.clientX - r.left) / r.width, y = (ev.clientY - r.top) / r.height;
+        inner.style.transition = 'transform .3s ease-out';
+        inner.style.transform = `rotateX(${((0.5 - y) * max).toFixed(2)}deg) rotateY(${((x - 0.5) * max * 1.3).toFixed(2)}deg)`;
+        inner.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+        inner.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+      });
+    });
+    el.addEventListener('pointerleave', () => { inner.style.transition = ''; inner.style.transform = ''; });
+  });
+})();
+
+const Magnetic = (() => {
+  if (reduced || !finePointer) return;
+  $$('[data-magnetic]').forEach(el => {
+    let t;
+    el.addEventListener('pointermove', e => {
+      clearTimeout(t);
+      const r = el.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2, y = e.clientY - r.top - r.height / 2;
+      el.style.transition = 'transform .2s ease-out';
+      el.style.transform = `translate(${(x * 0.22).toFixed(1)}px,${(y * 0.32).toFixed(1)}px)`;
+    });
+    el.addEventListener('pointerleave', () => {
+      el.style.transition = 'transform .7s cubic-bezier(.16,1,.3,1)';
+      el.style.transform = '';
+      t = setTimeout(() => { el.style.transition = ''; }, 700);
+    });
+  });
+})();
+
+/* --------------------------------------------------------------------------
+   8. COVERAGE — states, cities and routes from the Guntakal office
+   (Only the states and cities listed on the company's website.)
+   -------------------------------------------------------------------------- */
+const Coverage = (() => {
+  const svg = $('#coverageMap');
+  const section = $('#coverage');
+  const tabs = $$('.tab', section);
+  const panel = $('#regionPanel');
+  const img = $('#regionImg');
+  const nameEl = $('#regionName'), kicker = $('#regionKicker'), countEl = $('#regionCount');
+  const link = $('#regionLink'), linkName = $('#regionLinkName');
+  const chips = $('#regionChips');
+
+  const STATES = {
+    ap: { name: 'Andhra Pradesh', slug: 'andhra-pradesh' },
+    ts: { name: 'Telangana', slug: 'telangana' },
+    ka: { name: 'Karnataka', slug: 'karnataka' }
+  };
+  // [name, state, lat, lon, label side]
+  const CITIES = [
+    ['Anantapur', 'ap', 14.68, 77.60, 'r'], ['Kurnool', 'ap', 15.83, 78.04, 'r'], ['Ballari', 'ka', 15.14, 76.92, 'b'],
+    ['Chittoor', 'ap', 13.22, 79.10, 'r'], ['Cuddapah', 'ap', 14.47, 78.82, 'r'], ['Mahaboobnagar', 'ts', 16.74, 77.99, 'l'],
+    ['Hyderabad', 'ts', 17.39, 78.49, 'r'], ['Rangareddy', 'ts', 17.20, 78.15, 'l'], ['Medak', 'ts', 18.05, 78.26, 'l'],
+    ['Nizamabad', 'ts', 18.67, 78.09, 'l'], ['Adilabad', 'ts', 19.66, 78.53, 'r'], ['Karimnagar', 'ts', 18.44, 79.13, 'r'],
+    ['Warangal', 'ts', 17.97, 79.59, 'r'], ['Khammam', 'ts', 17.25, 80.15, 'r'], ['Nalgonda', 'ts', 17.05, 79.27, 'b'],
+    ['Srikakulam', 'ap', 18.30, 83.90, 't'], ['Vizianagaram', 'ap', 18.11, 83.40, 'l'], ['Visakhapatnam', 'ap', 17.69, 83.22, 'l'],
+    ['East Godavari', 'ap', 16.99, 82.25, 'r'], ['West Godavari', 'ap', 16.71, 81.10, 'r'], ['Krishna', 'ap', 16.51, 80.65, 't'],
+    ['Guntur', 'ap', 16.31, 80.44, 'l'], ['Prakasam', 'ap', 15.50, 80.05, 'r'], ['Nellore', 'ap', 14.44, 79.99, 'r']
+  ].map(([n, s, lat, lon, l]) => ({ n, s, lat, lon, l }));
+  const HQ = { lat: 15.17, lon: 77.37 };
+  const proj = (lat, lon) => [(lon - 76.2) * 95.238, (20.3 - lat) * 98.667];
+  const slug = n => n.toLowerCase().replace(/\s+/g, '-');
+  const cityUrl = n => `https://mahendrapackersandmovers.com/packers-movers-${slug(n)}-india`;
+  const f = v => v.toFixed(1);
+
+  /* ---- build the SVG ---- */
+  const [hx, hy] = proj(HQ.lat, HQ.lon);
+  let s = '<text class="region-lbl" x="330" y="118">Telangana</text><text class="region-lbl" x="450" y="560">Andhra Pradesh</text><text class="region-lbl" x="10" y="670">Karnataka</text>';
+  CITIES.forEach(c => {
+    const [x, y] = proj(c.lat, c.lon);
+    const dx = x - hx, dy = y - hy, len = Math.hypot(dx, dy) || 1, k = 0.2 * len;
+    const cx = (hx + x) / 2 - dy / len * k, cy = (hy + y) / 2 + dx / len * k;
+    Object.assign(c, { x, y, d: `M${f(hx)} ${f(hy)} Q${f(cx)} ${f(cy)} ${f(x)} ${f(y)}` });
+    s += `<path class="route-ghost" d="${c.d}"/>`;
+  });
+  CITIES.forEach(c => { s += `<path class="route" data-state="${c.s}" d="${c.d}" pathLength="1"/>`; });
+  CITIES.forEach((c, i) => {
+    const L = { r: [c.x + 11, c.y + 5, 'start'], l: [c.x - 11, c.y + 5, 'end'], t: [c.x, c.y - 13, 'middle'], b: [c.x, c.y + 24, 'middle'] }[c.l];
+    s += `<g class="city" data-state="${c.s}" data-city="${i}"><title>${c.n}, ${STATES[c.s].name}</title>` +
+         `<circle class="halo" cx="${f(c.x)}" cy="${f(c.y)}" r="6"/><circle class="dot" cx="${f(c.x)}" cy="${f(c.y)}" r="5"/>` +
+         `<circle cx="${f(c.x)}" cy="${f(c.y)}" r="16" fill="transparent"/>` +
+         `<text x="${f(L[0])}" y="${f(L[1])}" text-anchor="${L[2]}">${c.n}</text></g>`;
+  });
+  s += `<g class="hq"><circle class="wave" cx="${f(hx)}" cy="${f(hy)}" r="8"/><circle class="wave" cx="${f(hx)}" cy="${f(hy)}" r="8"/><circle class="wave" cx="${f(hx)}" cy="${f(hy)}" r="8"/>` +
+       `<circle class="core" cx="${f(hx)}" cy="${f(hy)}" r="8"/><circle cx="${f(hx)}" cy="${f(hy)}" r="3" fill="#fff"/>` +
+       `<text x="${f(hx)}" y="${f(hy - 18)}" text-anchor="middle">Guntakal</text></g><g id="mapRunners"></g>`;
+  svg.innerHTML = s;
+  const routes = $$('.route', svg), cityEls = $$('.city', svg), runners = $('#mapRunners');
+
+  Object.keys(STATES).forEach(k => {
+    const n = CITIES.filter(c => c.s === k).length;
+    $(`[data-count="${k}"]`).textContent = `${n} ${n === 1 ? 'city' : 'cities'}`;
+  });
+
+  // Ticker of every listed location
+  const names = CITIES.map(c => c.n);
+  const fill = (el, arr) => { const h = arr.map(n => `<span>${n}</span>`).join(''); el.innerHTML = h + h; };
+  fill($('#tickerA'), names.slice(0, 12));
+  fill($('#tickerB'), names.slice(12).concat(['Andhra Pradesh', 'Telangana', 'Karnataka']));
+
+  /* ---- interaction ---- */
+  let state = null, seen = false, imgToken = 0;
+
+  function setImage(file, alt) {
+    const src = `assets/img/cities/${file}.webp`;
+    if (img.getAttribute('src') === src) return;
+    const token = ++imgToken;
+    img.classList.add('is-out');
+    const pre = new Image(); pre.src = src;
+    const swap = () => {
+      if (token !== imgToken) return;
+      setTimeout(() => { if (token !== imgToken) return; img.src = src; img.alt = alt; requestAnimationFrame(() => img.classList.remove('is-out')); }, 220);
+    };
+    (pre.decode ? pre.decode() : Promise.resolve()).then(swap, swap);
+  }
+
+  function drawRoutes() {
+    let ri = 0, ci = 0;
+    routes.forEach(r => { const on = r.dataset.state === state; r.classList.toggle('on', on); r.style.setProperty('--i', on ? ri++ : 0); });
+    cityEls.forEach(g => { const on = g.dataset.state === state; g.classList.toggle('on', on); g.style.setProperty('--i', on ? ci++ : 0); });
+    if (!reduced) {
+      runners.innerHTML = CITIES.filter(c => c.s === state).slice(0, 8).map((c, i) =>
+        `<circle class="runner" r="3"><animateMotion dur="${(2.8 + i * 0.3).toFixed(1)}s" begin="${(i * 0.35).toFixed(2)}s" repeatCount="indefinite" path="${c.d}"/></circle>`).join('');
+    }
+  }
+
+  function select(k, focusTab) {
+    if (k === state) return;
+    state = k;
+    tabs.forEach(t => {
+      const on = t.dataset.state === k;
+      t.setAttribute('aria-selected', String(on));
+      t.tabIndex = on ? 0 : -1;
+      if (on && focusTab) t.focus();
+    });
+    panel.setAttribute('aria-labelledby', 'tab-' + k);
+    const list = CITIES.filter(c => c.s === k);
+    const st = STATES[k];
+    kicker.textContent = 'State';
+    nameEl.textContent = st.name;
+    countEl.textContent = `${list.length} ${list.length === 1 ? 'city' : 'cities'} listed`;
+    link.href = `https://mahendrapackersandmovers.com/packers-movers-${st.slug}-india`;
+    linkName.textContent = st.name;
+    setImage(st.slug, st.name);
+    chips.innerHTML = list.map((c, i) =>
+      `<li><a href="${cityUrl(c.n)}" target="_blank" rel="noopener" style="--i:${i}" data-city="${CITIES.indexOf(c)}">${c.n}</a></li>`).join('');
+    if (seen) drawRoutes();
+  }
+
+  function hot(i) {
+    const c = CITIES[i];
+    if (!c) return;
+    if (c.s !== state) select(c.s);
+    cityEls.forEach(g => g.classList.toggle('hot', +g.dataset.city === i));
+    $$('a', chips).forEach(a => a.classList.toggle('is-hot', +a.dataset.city === i));
+    kicker.textContent = STATES[c.s].name;
+    nameEl.textContent = c.n;
+    setImage(slug(c.n), c.n);
+  }
+
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t.dataset.state));
+    t.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      e.preventDefault();
+      const n = tabs[(i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length];
+      select(n.dataset.state, true);
+    });
+  });
+  svg.addEventListener('click', e => { const g = e.target.closest('.city'); if (g) hot(+g.dataset.city); });
+  svg.addEventListener('pointerover', e => { const g = e.target.closest('.city'); if (g && e.pointerType === 'mouse') hot(+g.dataset.city); });
+  ['pointerover', 'focusin'].forEach(ev => chips.addEventListener(ev, e => {
+    const a = e.target.closest('a[data-city]');
+    if (a && (ev === 'focusin' || e.pointerType === 'mouse')) hot(+a.dataset.city);
+  }));
+  $$('[data-goto-state]').forEach(a => a.addEventListener('click', () => select(a.dataset.gotoState)));
+
+  select('ap');
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      section.classList.toggle('paused', !e.isIntersecting);
+      if (e.isIntersecting && !seen) { seen = true; drawRoutes(); }
+    }, { rootMargin: '0px 0px -20% 0px' }).observe(section);
+  } else { seen = true; drawRoutes(); }
+
+  return { select };
+})();
+
+/* --------------------------------------------------------------------------
+   9. SUPPORT CLOCK — live Indian Standard Time
+   -------------------------------------------------------------------------- */
+const Clock = (() => {
+  const section = $('#support');
+  const hH = $('#handH'), hM = $('#handM'), hS = $('#handS'), dig = $('#clockDigital');
+  const fmt = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+  const parts = fmt.formatToParts(new Date());
+  const get = t => +(parts.find(p => p.type === t) || { value: 0 }).value;
+  const tod0 = (get('hour') % 24) * 3600 + get('minute') * 60 + get('second');
+  const t0 = performance.now();
+  let timer = 0;
+
+  // Angles only ever increase, so hands never sweep backwards at the top of the hour
+  function tick() {
+    const t = tod0 + (performance.now() - t0) / 1000;
+    const sec = Math.floor(t);
+    hS.style.transform = `rotate(${sec * 6}deg)`;
+    hM.style.transform = `rotate(${(t / 10).toFixed(2)}deg)`;
+    hH.style.transform = `rotate(${(t / 120).toFixed(2)}deg)`;
+    const d = sec % 86400;
+    dig.textContent = `${String(Math.floor(d / 3600)).padStart(2, '0')}:${String(Math.floor(d / 60) % 60).padStart(2, '0')}`;
+  }
+  tick();
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => {
+      section.classList.toggle('paused', !e.isIntersecting);
+      clearInterval(timer);
+      if (e.isIntersecting) { tick(); timer = setInterval(tick, 1000); }
+    }).observe(section);
+  } else timer = setInterval(tick, 1000);
+})();
+
+/* --------------------------------------------------------------------------
+   10. HOW IT WORKS — journey road, travelling truck, step states
+   -------------------------------------------------------------------------- */
+const Process = (() => {
+  const section = $('#process');
+  const sticky = $('.process__sticky', section);
+  const track = $('#processTrack');
+  const road = $('#processRoad');
+  const basePath = $('.base', road), fillPath = $('.fill', road);
+  const truck = $('#processTruck');
+  const steps = $$('.step', track);
+  const num = $('#processNum');
+  const bars = $$('.process__hud .bars i');
+  const mq = matchMedia('(min-width: 1024px)');
+  let horizontal = false, top = 0, H = 1, vw = 1, maxX = 0, trackTop = 0;
+  let len = 1, samples = [], medalL = [], stepPos = [], activeN = -1;
+
+  function buildRoad() {
+    const tr = track.getBoundingClientRect();
+    const pts = steps.map(s => {
+      const r = $('[data-medal]', s).getBoundingClientRect();
+      return [r.left - tr.left + r.width / 2, r.top - tr.top + r.height / 2];
+    });
+    stepPos = pts.map(p => horizontal ? p[0] : p[1]);
+    const first = pts[0], last = pts[pts.length - 1];
+    const all = horizontal
+      ? [[first[0] - Math.min(360, vw * 0.3), first[1]], ...pts, [last[0] + Math.min(360, vw * 0.3), last[1]]]
+      : [[first[0], first[1] - 140], ...pts, [last[0], last[1] + 180]];
+    let d = `M${all[0][0].toFixed(1)} ${all[0][1].toFixed(1)}`;
+    for (let i = 1; i < all.length; i++) {
+      const [x0, y0] = all[i - 1], [x1, y1] = all[i];
+      d += horizontal
+        ? ` C${(x0 + (x1 - x0) / 2).toFixed(1)} ${y0.toFixed(1)} ${(x1 - (x1 - x0) / 2).toFixed(1)} ${y1.toFixed(1)} ${x1.toFixed(1)} ${y1.toFixed(1)}`
+        : ` C${x0.toFixed(1)} ${(y0 + (y1 - y0) / 2).toFixed(1)} ${x1.toFixed(1)} ${(y1 - (y1 - y0) / 2).toFixed(1)} ${x1.toFixed(1)} ${y1.toFixed(1)}`;
+    }
+    const w = track.scrollWidth, h = track.scrollHeight;
+    road.setAttribute('width', w); road.setAttribute('height', h);
+    road.setAttribute('viewBox', `0 0 ${w} ${h}`);
+    basePath.setAttribute('d', d); fillPath.setAttribute('d', d);
+    len = fillPath.getTotalLength() || 1;
+    fillPath.style.strokeDasharray = `${len} ${len}`;
+    samples = [];
+    for (let i = 0; i <= 240; i++) { const l = len * i / 240, p = fillPath.getPointAtLength(l); samples.push([l, horizontal ? p.x : p.y]); }
+    medalL = stepPos.map(lengthAt);
+  }
+
+  // Path length at a given x (horizontal) or y (vertical) coordinate
+  function lengthAt(v) {
+    if (v <= samples[0][1]) return 0;
+    for (let i = 1; i < samples.length; i++) {
+      if (samples[i][1] >= v) {
+        const [l0, a] = samples[i - 1], [l1, b] = samples[i];
+        return l0 + (l1 - l0) * ((v - a) / ((b - a) || 1));
+      }
+    }
+    return len;
+  }
+
+  function measure(vh) {
+    horizontal = mq.matches && !reduced;
+    track.style.transform = '';
+    truck.style.transform = '';
+    road.setAttribute('width', 0); road.setAttribute('height', 0);
+    section.style.height = '';
+    vw = sticky.clientWidth;
+    if (horizontal) {
+      maxX = Math.max(0, track.scrollWidth - vw);
+      section.style.height = (maxX + vh) + 'px';
+    }
+    top = docTop(section);
+    H = section.offsetHeight;
+    trackTop = docTop(track);
+    buildRoad();
+  }
+
+  function update(y, vh) {
+    if (y < top - vh * 1.5 || y > top + H + vh * 0.5) return;
+    let head;
+    if (horizontal) {
+      const p = clamp((y - top) / Math.max(1, H - vh));
+      const x = p * maxX;
+      track.style.transform = `translate3d(${(-x).toFixed(1)}px,0,0)`;
+      head = x + vw * 0.55;
+    } else {
+      head = y + vh * 0.62 - trackTop;
+    }
+    const L = lengthAt(head);
+    fillPath.style.strokeDashoffset = (len - L).toFixed(1);
+    const pt = fillPath.getPointAtLength(L);
+    truck.style.transform = `translate3d(${pt.x.toFixed(1)}px,${pt.y.toFixed(1)}px,0)`;
+
+    let n = 0;
+    steps.forEach((s, i) => {
+      const on = head >= stepPos[i] - (horizontal ? vw * 0.18 : 40);
+      s.classList.toggle('is-active', on);
+      if (on) n = i + 1;
+    });
+    if (n !== activeN) { activeN = n; num.textContent = '0' + Math.max(1, n); }
+    bars.forEach((b, i) => {
+      const a = i ? medalL[i - 1] : 0, z = medalL[i];
+      b.style.setProperty('--f', clamp((L - a) / ((z - a) || 1)).toFixed(3));
+    });
+  }
+
+  Engine.measure(measure, 0);   // runs first: it changes page height
+  Engine.on(update);
+})();
+
+/* --------------------------------------------------------------------------
+   11. REVIEWS — 3D carousel (auto-advance, buttons, dots, swipe, keys)
+   -------------------------------------------------------------------------- */
+const Carousel = (() => {
+  const box = $('#reviewsCarousel');
+  const stage = $('#carouselStage');
+  const slides = $$('.review', stage);
+  const dotsWrap = $('#carouselDots');
+  const n = slides.length, DUR = 6000;
+  let active = 0, timer = 0, hover = false, inView = false;
+
+  dotsWrap.innerHTML = slides.map((_, i) => `<button type="button" aria-label="Show review ${i + 1} of ${n}"></button>`).join('');
+  const dots = $$('button', dotsWrap);
+  box.style.setProperty('--dur', DUR + 'ms');
+
+  function layout() {
+    const mobile = innerWidth < 700;
+    slides.forEach((s, i) => {
+      let o = ((i - active) % n + n) % n;
+      if (o > n / 2) o -= n;
+      const a = Math.abs(o), hidden = a > 1;
+      const x = o * (mobile ? 74 : 64), z = hidden ? -520 : -a * (mobile ? 180 : 260), ry = hidden ? 0 : -o * (mobile ? 16 : 30);
+      s.style.transform = `translate3d(${x}%,0,${z}px) rotateY(${ry}deg) scale(${hidden ? 0.7 : 1 - a * 0.06})`;
+      s.style.opacity = hidden ? 0 : a ? (mobile ? 0.3 : 0.5) : 1;
+      s.style.zIndex = String(10 - a);
+      s.style.pointerEvents = hidden ? 'none' : '';
+      s.classList.toggle('is-active', o === 0);
+      s.setAttribute('aria-hidden', String(o !== 0));
+    });
+    dots.forEach((d, i) => d.setAttribute('aria-current', String(i === active)));
+  }
+  function go(i) { active = (i + n) % n; layout(); restart(); }
+  function restart() {
+    clearInterval(timer);
+    const run = !reduced && !hover && inView;
+    box.classList.toggle('is-paused', !run);
+    if (run) {
+      const d = dots[active]; d.removeAttribute('aria-current'); void d.offsetWidth; d.setAttribute('aria-current', 'true');
+      timer = setInterval(() => go(active + 1), DUR);
+    }
+  }
+
+  $$('[data-dir]', box).forEach(b => b.addEventListener('click', () => go(active + +b.dataset.dir)));
+  dots.forEach((d, i) => d.addEventListener('click', () => go(i)));
+  box.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(active + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(active - 1); }
+  });
+  stage.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') { hover = true; restart(); } });
+  stage.addEventListener('pointerleave', () => { if (hover) { hover = false; restart(); } });
+  box.addEventListener('focusin', () => { hover = true; restart(); });
+  box.addEventListener('focusout', () => { hover = false; restart(); });
+
+  let x0 = null, moved = false;
+  stage.addEventListener('pointerdown', e => { x0 = e.clientX; moved = false; });
+  stage.addEventListener('pointermove', e => { if (x0 !== null && Math.abs(e.clientX - x0) > 8) moved = true; });
+  stage.addEventListener('pointerup', e => {
+    if (x0 === null) return;
+    const dx = e.clientX - x0; x0 = null;
+    if (Math.abs(dx) > 45) { go(active + (dx < 0 ? 1 : -1)); return; }
+    if (!moved) { const s = e.target.closest('.review'); const i = slides.indexOf(s); if (i >= 0 && i !== active) go(i); }
+  });
+  stage.addEventListener('pointercancel', () => { x0 = null; });
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => { inView = e.isIntersecting; restart(); }, { threshold: 0.25 }).observe(box);
+  }
+  addEventListener('resize', layout);
+  layout();
+})();
+
+/* --------------------------------------------------------------------------
+   12. FAQ — accordion with smooth height (CSS grid rows)
+   -------------------------------------------------------------------------- */
+const Faq = (() => {
+  const items = $$('.acc__item');
+  const set = (item, open) => {
+    item.classList.toggle('is-open', open);
+    $('.acc__btn', item).setAttribute('aria-expanded', String(open));
+    $('.acc__panel', item).inert = !open;
+  };
+  items.forEach((item, i) => {
+    set(item, i === 0);
+    $('.acc__btn', item).addEventListener('click', () => {
+      const open = !item.classList.contains('is-open');
+      items.forEach(o => { if (o !== item && o.classList.contains('is-open')) set(o, false); });
+      set(item, open);
+      setTimeout(Engine.remeasure, 650);
+    });
+  });
+})();
+
+/* --------------------------------------------------------------------------
+   13. QUOTE FORM — validation + submission to the existing booking endpoint
+   -------------------------------------------------------------------------- */
+const QuoteForm = (() => {
+  const form = $('#quote');
+  const status = $('#qstatus');
+  const submit = $('button[type="submit"]', form);
+  const routeField = $('#routeField');
+  const from = $('#f-from'), to = $('#f-to'), date = $('#f-date');
+  const now = new Date();
+  const today = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  date.min = today;
+
+  const rules = {
+    name: v => v.trim().length >= 2,
+    phone: v => /^(?:\+?91|0)?[6-9]\d{9}$/.test(v.replace(/[\s\-()]/g, '')),
+    email: v => !v.trim() || /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
+    mfrom: v => v.trim().length >= 2,
+    mto: v => v.trim().length >= 2,
+    category: v => !!v,
+    date: v => !v || v >= today
+  };
+  const fields = $$('input, select, textarea', form).filter(el => rules[el.name]);
+
+  function check(el) {
+    const ok = rules[el.name](el.value);
+    el.closest('.field').classList.toggle('has-error', !ok);
+    el.setAttribute('aria-invalid', String(!ok));
+    return ok;
+  }
+  const updateRoute = () => routeField.classList.toggle('has-route', from.value.trim().length > 1 && to.value.trim().length > 1);
+  from.addEventListener('input', updateRoute);
+  to.addEventListener('input', updateRoute);
+
+  form.addEventListener('focusout', e => { const el = e.target; if (rules[el.name] && el.value) check(el); });
+  form.addEventListener('input', e => { const el = e.target; if (rules[el.name] && el.closest('.field').classList.contains('has-error')) check(el); });
+  form.addEventListener('change', e => { const el = e.target; if (el.tagName === 'SELECT' && rules[el.name]) check(el); });
+
+  const esc = t => t.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  function whatsappLink(fd) {
+    const label = sel => { const o = $(`[name="${sel}"]`, form); return o && o.selectedIndex > 0 ? o.options[o.selectedIndex].text : ''; };
+    const lines = [
+      'Hello Mahendra Packers and Movers, I would like a moving quote.',
+      `Name: ${fd.get('name')}`, `Phone: ${fd.get('phone')}`,
+      fd.get('email') && `Email: ${fd.get('email')}`,
+      `From: ${fd.get('mfrom')}`, `To: ${fd.get('mto')}`,
+      label('category') && `Move type: ${label('category')}`,
+      fd.get('date') && `Moving date: ${fd.get('date')}`,
+      label('inventory_type') && `Inventory: ${label('inventory_type')}`,
+      label('packing_services') && `Packing: ${label('packing_services')}`,
+      label('transport_mode') && `Transport: ${label('transport_mode')}`,
+      fd.get('msg') && `Notes: ${fd.get('msg')}`
+    ].filter(Boolean);
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n'))}`;
+  }
+
+  function show(kind, msg, fd) {
+    const actions = fd
+      ? `<div class="actions"><a class="btn btn--red btn--sm" href="${PHONE_LINK}"><span class="btn__label" data-text="Call ${PHONE_DISPLAY}"><span>Call ${PHONE_DISPLAY}</span></span></a>` +
+        `<a class="btn btn--outline btn--sm" href="${whatsappLink(fd)}" target="_blank" rel="noopener"><span class="btn__label" data-text="Send via WhatsApp"><span>Send via WhatsApp</span></span></a></div>`
+      : '';
+    status.innerHTML = `<div class="box ${kind}">${esc(msg)}${actions}</div>`;
+  }
+
+  function setBusy(b) {
+    form.classList.toggle('is-busy', b);
+    submit.disabled = b;
+    form.setAttribute('aria-busy', String(b));
+  }
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const bad = fields.filter(el => !check(el));
+    if (bad.length) {
+      bad[0].focus();
+      show('bad', `Please check the highlighted field${bad.length > 1 ? 's' : ''}.`);
+      return;
+    }
+    const fd = new FormData(form);
+    fd.set('message', fd.get('msg') || '');   // the endpoint's other forms post this as "message"
+    setBusy(true);
+    status.innerHTML = '';
+    try {
+      const res = await fetch(QUOTE_ENDPOINT, {
+        method: 'POST',
+        body: new URLSearchParams(fd),
+        headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        credentials: 'same-origin'
+      });
+      const text = (await res.text()).trim();
+      if (res.ok && text === '1') {
+        form.reset();
+        updateRoute();
+        $$('.field.has-error', form).forEach(f => f.classList.remove('has-error'));
+        show('ok', "Thank you! Your quote request has been submitted successfully. We'll respond soon.");
+      } else {
+        const tmp = document.createElement('div'); tmp.innerHTML = text;
+        const serverMsg = (tmp.textContent || '').trim();
+        show('bad', serverMsg && serverMsg.length < 240
+          ? serverMsg
+          : "We couldn't submit your request right now. Please call us or send your details on WhatsApp.", fd);
+      }
+    } catch (err) {
+      show('bad', "We couldn't confirm your request from this page, so it may not have been sent. Please call us or send the same details on WhatsApp.", fd);
+    } finally {
+      setBusy(false);
+    }
+  });
+})();
+
+/* --------------------------------------------------------------------------
+   14. PAGE CHROME — progress bar, back-to-top ring, floating call button
+   -------------------------------------------------------------------------- */
+const Chrome = (() => {
+  const bar = $('#pageProgress');
+  const toTop = $('#toTop');
+  const ring = $('#toTopRing');
+  const fab = $('#fabCall');
+  let max = 1, aboutTop = 0;
+  Engine.measure(() => { max = Math.max(1, root.scrollHeight - innerHeight); aboutTop = docTop($('#about')); }, 30);
+  Engine.on((y, vh) => {
+    const p = clamp(y / max);
+    bar.style.transform = `scaleX(${p.toFixed(4)})`;
+    ring.style.strokeDashoffset = (157 * (1 - p)).toFixed(1);
+    const pastHero = y > aboutTop - vh * 0.5;   // the hero has its own call buttons + HUD
+    toTop.classList.toggle('is-on', pastHero);
+    fab.classList.toggle('is-on', pastHero);
+  });
+  toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+  $('#year').textContent = new Date().getFullYear();
+})();
+
+/* --------------------------------------------------------------------------
+   15. BOOT — measure now, and again once fonts/images settle the layout
+   -------------------------------------------------------------------------- */
+// Circular badge text: spread the letters so the phrase closes the ring exactly
+function fitRings() {
+  $$('[data-fit-ring]').forEach(t => {
+    const path = document.getElementById((t.firstElementChild.getAttribute('href') || '').slice(1));
+    if (!path) return;
+    t.style.letterSpacing = '0px';
+    const free = path.getTotalLength() - t.getComputedTextLength();
+    t.style.letterSpacing = Math.max(0, free / t.textContent.length).toFixed(2) + 'px';
+  });
+}
+
+Engine.remeasure();
+fitRings();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { fitRings(); Engine.remeasure(); });
+addEventListener('load', Engine.remeasure, { once: true });
+
+})();
+</script>
+</body>
+</html>
