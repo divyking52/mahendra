@@ -1,7 +1,6 @@
-# Source material — not needed by the site (and too large for GitHub)
+# Local source material — the site loads every image from the Storebox CDN
 *.zip
-assets/House_relocation_animation_journey_601e88da_1080p_frames/
-assets/originals/
+assets/
 
 # Tooling
 .vercel
