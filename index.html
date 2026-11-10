@@ -13,15 +13,15 @@
 <script>document.documentElement.classList.add('js');</script>
 
 <!-- First hero frame: fetched early so the canvas can paint immediately -->
-<link rel="preload" as="image" href="assets/frames/sm/frame_001.webp" media="(max-width: 900px), (pointer: coarse) and (max-width: 1366px)">
-<link rel="preload" as="image" href="assets/frames/lg/frame_001.webp" media="(min-width: 901px) and (pointer: fine), (min-width: 1367px)">
+<link rel="preload" as="image" href="assets/frames/sm/frame_001.webp?v=2" media="(max-width: 900px), (pointer: coarse) and (max-width: 1366px)">
+<link rel="preload" as="image" href="assets/frames/lg/frame_001.webp?v=2" media="(min-width: 901px) and (pointer: fine), (min-width: 1367px)">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap">
 
 <noscript><style>
-  .hero__sticky{background:#161e2d url(assets/frames/sm/frame_001.webp) center/cover no-repeat}
+  .hero__sticky{background:#161e2d url(assets/frames/sm/frame_001.webp?v=2) center/cover no-repeat}
   .hero__phases,.hero__hud,.hero__cue{display:none!important}
 </style></noscript>
 
@@ -1714,6 +1714,7 @@ const FRAME_FILES = /*@frames*/[
 ]/*@end*/;
 const FRAME_PATH_LG = 'assets/frames/lg/';
 const FRAME_PATH_SM = 'assets/frames/sm/';
+const FRAME_VERSION = '2';   // bump whenever the frame images are re-exported (busts browser caches)
 const SMALL_MQ = '(max-width: 900px), (pointer: coarse) and (max-width: 1366px)';
 
 // Existing booking endpoint used by the original website's quote forms (replies "1" on success).
@@ -1849,7 +1850,7 @@ const Hero = (() => {
     return new Promise(resolve => {
       const img = new Image();
       img.decoding = 'async';
-      img.src = base + FRAME_FILES[i];
+      img.src = `${base}${FRAME_FILES[i]}?v=${FRAME_VERSION}`;
       const ok = () => {
         frames[i] = img;
         if (!rect) computeRect();
